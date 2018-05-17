@@ -18,9 +18,7 @@ fun main(args: Array<String>) {
             Car("car-id-1", "car-name-1", Price( BigDecimal.valueOf(10000), "PLN"))
     ))
 
-    var filterCars = cars_2.cars
-            .filter {  }
-
-    cars_1 = cars_1.cars.minus(cars_2.cars)
+    cars_1.cars
+            .filter { it.price.amount }
 
 }
