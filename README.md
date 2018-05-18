@@ -1,1 +1,2 @@
-# Code Snippets - Life, the Universe and Everything...
+# Life, the Universe and Everything Else
+Code Snippets
