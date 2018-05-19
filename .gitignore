@@ -4,5 +4,5 @@ jupyter-notebooks/machine-learning/output/*
 jupyter-notebooks/private/*
 
 **/.ipynb_checkpoints
-**/.DS_Store
+**/.DS_Store/**
 **.log
