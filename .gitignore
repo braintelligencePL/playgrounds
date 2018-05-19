@@ -1,6 +1,6 @@
 
-jupyter-notebooks/machine-learning/input/*
-jupyter-notebooks/machine-learning/output/*
+upyter-notebooks/machine-learning/input/*
+upyter-notebooks/machine-learning/output/*
 jupyter-notebooks/private/*
 
 **/.ipynb_checkpoints
