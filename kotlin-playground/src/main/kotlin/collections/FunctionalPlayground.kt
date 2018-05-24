@@ -18,7 +18,5 @@ fun main(args: Array<String>) {
             Car("car-id-1", "car-name-1", Price( BigDecimal.valueOf(10000), "PLN"))
     ))
 
-    cars_1.cars
-            .filter { it.price.amount }
-
+    print( cars_1.cars.map { it.id } )
 }
