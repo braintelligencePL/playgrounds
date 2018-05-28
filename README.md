@@ -1,6 +1,6 @@
 # Life, the Universe and Everything Else - Playground
-## **What you can find here:**<br>
-<br>
+## **What you can find here:**
+
 ### Machine-Learning & Deep-Learning
 
 * **input** - our data for training models.
