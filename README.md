@@ -1,32 +1,39 @@
 # Life, the Universe and Everything Else - Playground
 ### **What you can find here:**<br>
-#### 
+<br>
+#### Machine-Learning & Deep-Learning
+* **input** - our data for training models.
+* **notebooks** - place for our jupyter notebooks.
+* **output** - processed data, models.
 
 ```
-/jupyter-notebooks
-```
+jupyter-notebooks
+│
+└───machine-learning 
+│   │
+│   └───input
+│   │
+│   └───notebooks
+│   │
+│   └───output
 
 
 ```
-/projects/...
+#### Web Programming - Projects
+1. **ToDoList** 
+ * **to-do-list-layered-service** - Sample REST service implemented using Layered Architecture.
+ * **to-do-list-hexagonal-service** - Sample REST service implemented using Hexagonal Architecture. 
+ * **to-do-list-frontend** - Sample frond-end implemented in React.js
 
+ 
 ```
-
-.
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
+projects 
+│
+└───ToDoList
+│   │
+│   └───to-do-list-layered-service
+│   │
+│   └───to-do-list-hexagonal-service
+│   │
+│   └───to-do-list-frontend
+```
