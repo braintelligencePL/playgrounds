@@ -1,4 +1,4 @@
-## To do List - Service
+# To do List - Service
 Sample REST service implemented using most popular **Layered Architecture**. 
 ### Running:
 ```
@@ -15,3 +15,4 @@ Sample REST service implemented using **Hexagonal Architecture**.
 
 ## To do List - Frontend (soon)
 Will be implemented in React.js
+
