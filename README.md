@@ -1,3 +1,6 @@
-# Life, the Universe and Everything Else - My Playground
+# Life, the Universe and Everything Else - Playground
+**What you can find here:**<br>
 * Code Snippets.
 * Machine Learning, Deep Learning... just AI generaly speaking. Solutions for <b>kaggle competitions.</b>
+* Kotlin, Java and more...
+* DDD, hexagonal architecture... 
