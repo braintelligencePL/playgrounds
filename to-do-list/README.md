@@ -1,7 +1,7 @@
 # TO DO LIST
 
-## to-do-list-service
-Sample REST service implemented using most popular **layered architecture**. 
+## To do List - Service
+Sample REST service implemented using most popular **Layered Architecture**. 
 ### Running:
 ```
 ./gradlew bootRun
@@ -11,6 +11,9 @@ Sample REST service implemented using most popular **layered architecture**.
 ./gradlew test
 ```
 
-## to-do-list-hexagonal-service (soon)
+## To do List - Hexagonal Service (soon)
+Sample REST service implemented using **Hexagonal Architecture**. 
 
-## to-do-list-frontend
+
+## To do List - Frontend
+Will be implemented in React.js

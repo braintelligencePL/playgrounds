@@ -1,19 +1,19 @@
-group 'to-do-list'
-version '1.0'
-
-sourceCompatibility = 1.8
-
-ext.springBootVersion = '2.0.2.RELEASE'
-
-repositories {
-    mavenCentral()
-}
-
 plugins {
     id 'groovy'
     id 'org.springframework.boot' version '2.0.2.RELEASE'
     id 'java'
 }
+
+group 'to-do-list'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext.springBootVersion = '2.0.2.RELEASE'
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
