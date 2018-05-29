@@ -7,4 +7,9 @@ jupyter-notebooks/private/*
 **/.DS_Store
 **.log
 
-/out
+.idea
+.gradle
+build
+classes
+out
+*.iml
