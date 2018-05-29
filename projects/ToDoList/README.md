@@ -4,9 +4,13 @@ Sample REST service implemented using most popular **Layered Architecture**.
 ```
 ./gradlew bootRun
 ```
-### Testing:
+### Unit Tests:
 ```
 ./gradlew test
+```
+### Integration Tests:
+```
+./gradlew integrationTest
 ```
 
 ## To do List - Hexagonal Service (soon)
