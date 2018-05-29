@@ -1,5 +1,7 @@
-# To do List - Service
-Sample REST service implemented using most popular **Layered Architecture**. 
+# To do List - Project
+Sample REST service implemented using most popular **Layered Architecture**.
+
+## To do List - Layered Service 
 ### Running:
 ```
 ./gradlew bootRun
