@@ -12,7 +12,7 @@
 ```
 ./gradlew integrationTest
 ```
-
+<br>
 ## To do List - Layered Service 
 Sample REST service implemented using most popular **Layered Architecture**.
 
