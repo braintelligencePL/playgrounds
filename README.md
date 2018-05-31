@@ -24,9 +24,9 @@ jupyter-notebooks
 
 1. **ToDoList** 
 
- * **to-do-list-layered-service** - Sample REST service implemented using Layered Architecture.
- * **to-do-list-hexagonal-service** - Sample REST service implemented using Hexagonal Architecture. 
- * **to-do-list-frontend** - Sample frond-end implemented in React.js
+ * **to-do-list-layered-service** - Sample REST service implemented using <b>Layered Architecture</b>.
+ * **to-do-list-hexagonal-service** - Sample REST service implemented using <b>Hexagonal Architecture</b>. 
+ * **to-do-list-frontend** - Sample frond-end implemented in <b>React.js</b>
 
  
 ```
