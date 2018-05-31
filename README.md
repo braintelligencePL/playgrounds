@@ -1,7 +1,7 @@
 # Life, the Universe and Everything Else - My Playground
 ## **What you can find here:**
 
-### Machine-Learning & Deep-Learning
+### `jupyter-notebooks` Machine-Learning & Deep-Learning
 
 * **input** - our data for training models.
 * **notebooks** - place for our jupyter notebooks.
