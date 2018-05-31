@@ -24,11 +24,10 @@ jupyter-notebooks
 
 1. **ToDoList** 
 
- * **backend: layered-service** - Sample REST service implemented using <b>Layered Architecture</b>.
- * **backend: hexagonal-service** - Sample REST service implemented using <b>Hexagonal Architecture</b>. 
- * **frontend ** - Sample frond-end implemented in <b>React.js</b>
+ * **Backend: Java, Kotlin** - Sample REST service implemented using <b>Layered Architecture</b>.
+ * **Backend: Java, Kotlin** - Sample REST service implemented using <b>Hexagonal Architecture</b>. 
+ * **Frontend** - Sample frond-end implemented in <b>React.js</b>
 
- 
 ```
 projects 
 │
