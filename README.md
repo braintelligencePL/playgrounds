@@ -1,4 +1,4 @@
-# Life, the Universe and Everything Else - Playground
+# Life, the Universe and Everything Else - My Playground
 ## **What you can find here:**
 
 ### Machine-Learning & Deep-Learning
