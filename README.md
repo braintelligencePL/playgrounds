@@ -19,5 +19,4 @@ You will find sample projects that I made for a better understanding of some con
 * Spock (Groovy) in <b>/test</b>
 So far best combination for me :)
 
-* #DomainDrivenDesign #DesignPatterns 
-* #Elasticsearch #MongoDB
+* DomainDrivenDesign, DesignPatterns, Elasticsearch, MongoDB
