@@ -21,12 +21,16 @@ To run integration tests:
 
 * `POST /list` - create new list
 * `GET /lists` - retrieve all lists
+
 <br>
+
 * `PUT /list/:id/` - change list name
 * `GET /list/:id/tasks` - get all tasks from specific list
 * `GET /list/:id/tasks?state=current` - get all tasks from specific list
 * `GET /list/:id/tasks?state=finished` - get all tasks from specific list
+
 <br>
+
 * `POST /list/:id/task` - add task to list
 * `PUT /list/:id/task` - change task state 
 
