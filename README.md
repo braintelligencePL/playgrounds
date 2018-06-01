@@ -3,21 +3,7 @@
 
 ### `jupyter-notebooks` Machine-Learning & Deep-Learning
 
-* **input** - our data for training models.
-* **notebooks** - place for our jupyter notebooks.
-* **output** - processed data, models.
 
-```
-jupyter-notebooks
-│
-└───machine-learning 
-│   │
-│   └───input
-│   │
-│   └───notebooks
-│   │
-│   └───output
-```
 ### `projects` Frontend and Backend
 
 <b>$ [github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
