@@ -1,6 +1,5 @@
 package pl.braintelligence.todolist.infrastructure.error;
 
-
 import pl.braintelligence.todolist.domain.exceptions.ErrorCode;
 
 class ErrorMessage {

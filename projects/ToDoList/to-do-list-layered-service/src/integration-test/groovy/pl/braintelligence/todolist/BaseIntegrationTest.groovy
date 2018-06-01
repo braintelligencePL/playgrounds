@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
+import org.springframework.data.mongodb.core.MongoTemplate
 import org.springframework.http.*
 import spock.lang.Specification
 
@@ -20,17 +21,33 @@ class BaseIntegrationTest extends Specification {
     @Autowired
     TestRestTemplate restTemplate
 
-    @Value('${local.server.port}')
-    protected int port
+    @Autowired
+    private MongoTemplate mongo
 
-    protected String localUrl(String endpoint) {
-        return "http://localhost:$port$endpoint"
-    }
 
     protected static <T> HttpEntity<T> prepareHttpEntity(T data, Map<String, List<String>> additionalHeaders = [:]) {
         def headers = new HttpHeaders()
 
         headers.putAll(additionalHeaders)
         return new HttpEntity<T>(data, headers)
+    }
+
+    void setupSpec() {
+        fixWireMock()
+    }
+
+    void setup() {
+        clearMongoDb()
+    }
+
+    private static void fixWireMock() {
+        System.setProperty('http.keepAlive', 'false')
+        System.setProperty('http.maxConnections', '1')
+    }
+
+    private void clearMongoDb() {
+        for (def collection : mongo.collectionNames) {
+            mongo.dropCollection(collection)
+        }
     }
 }
