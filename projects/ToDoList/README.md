@@ -1,18 +1,16 @@
 # ToDoList - Project
 
-## Working with application 
-Building tool: <b>Gradle</b>
-Languages used: <b>Java, Kotlin</b>
+## Working with application
 
-Running:
+To run application:
 ```
 ./gradlew bootRun
 ```
-### Unit Tests:
+To run unit tests
 ```
 ./gradlew test
 ```
-### Integration Tests:
+To run integration tests:
 ```
 ./gradlew integrationTest
 ```
