@@ -1,6 +1,15 @@
 # Life, the universe and everything else - Playground
 
+You will find sample projects that I made for a better understanding of some concepts.
+
 ## **What you can find here:**
+* Building with <b>Gradle</b>
+* Java/Kotlin in /main 
+* Spock (Groovy) in /test
+So far best combination for me :)
+
+* #DomainDrivenDesign #DesignPatterns 
+* #Elasticsearch #MongoDB
 
 ### `/jupyter-notebooks` machine-learning & deep-learning section
 <b>[$ github checkout machine-learning](https://github.com/LukSroczynski/playgrounds/tree/master/jupyter-notebooks/machine-learning)</b>
