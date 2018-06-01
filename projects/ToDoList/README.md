@@ -1,6 +1,6 @@
 # ToDoList - Project
 
-## Working with application
+## Working with backend application
 
 To run application:
 ```
