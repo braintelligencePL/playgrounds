@@ -1,12 +1,12 @@
 # Life, the Universe and Everything Else - My Playground
 ## **What you can find here:**
 
-### `jupyter-notebooks` Machine-Learning & Deep-Learning
+### `/jupyter-notebooks` Machine-Learning & Deep-Learning Section
+<b>[$ github checkout machine-learning](https://github.com/LukSroczynski/playgrounds/tree/master/jupyter-notebooks/machine-learning)</b>
 
+### `/projects` Frontend and Backend projects
 
-### `projects` Frontend and Backend
-
-<b>$ [github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
+<b>[$ github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
 
  * **Backend: Layered Architecture** - Sample REST service implemented in <b>Layered Architecture</b>.
  * **Backend: Hexagonal Architecture** - Sample REST service implemented in <b>Hexagonal Architecture</b>. 
