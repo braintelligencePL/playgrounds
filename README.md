@@ -13,10 +13,9 @@ You will find sample projects that I made for a better understanding of some con
 
 ## Using:
 
-
-* Building with <b>Gradle</b>
-* Java/Kotlin in <b>/main </b>
-* Spock (Groovy) in <b>/test</b>
+* Building with `Gradle`
+* `Java/Kotlin` in `/main`
+* `Spock (groovy)` in `/test`
 So far best combination for me :)
 
 * DomainDrivenDesign, DesignPatterns, Elasticsearch, MongoDB
