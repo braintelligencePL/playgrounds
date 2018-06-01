@@ -32,7 +32,7 @@ To run integration tests:
 ## Additional features
 * Searching by task text - elasticsearch
 
-# Different approaches 
+# Implemented in architectures
 
 ### To do List - Layered Service (in progress)
 Sample REST service implemented using most popular **Layered Architecture**.
