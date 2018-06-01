@@ -20,19 +20,25 @@ To run integration tests:
 # Endpoints:
 
 * `POST /list` - create new list
+* `POST /list/:id/task` - add task to the list
+
+<br>
+
 * `GET /lists` - retrieve all lists
+* `GET /lists/:id/tasks` - retrieve all tasks from certain list
+* `GET /lists/:id/tasks/pending` - retrieve pending tasks from certain list
+* `GET /lists/:id/tasks/completed` - retrieve completed tasks from certain list
 
 <br>
 
-* `PUT /list/:id/` - change list name
-* `GET /list/:id/tasks` - get all tasks from specific list
-* `GET /list/:id/tasks?state=current` - get all tasks from specific list
-* `GET /list/:id/tasks?state=finished` - get all tasks from specific list
+* `PUT /list/:id/task/:id` - for changing task text
+* `PUT /list/:id/` - for changing name of the list 
 
 <br>
 
-* `POST /list/:id/task` - add task to list
-* `PUT /list/:id/task` - change task state 
+* `DELETE /list/:id` - delete list
+* `DELETE /list/:id/task/:id` - delete task
+
 
 ## Additional features
 * Searching by task text - elasticsearch
