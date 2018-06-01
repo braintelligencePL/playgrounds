@@ -1,39 +1,20 @@
-# Life, the Universe and Everything Else - My Playground
+# Life, the universe and everything else - Playground
+
+You will find sample projects that I made for a better understanding of some concepts.
+
 ## **What you can find here:**
+* Building with <b>Gradle</b>
+* Java/Kotlin in /main 
+* Spock (Groovy) in /test
+So far best combination for me :)
 
-### `jupyter-notebooks` Machine-Learning & Deep-Learning
+* #DomainDrivenDesign #DesignPatterns 
+* #Elasticsearch #MongoDB
 
-* **input** - our data for training models.
-* **notebooks** - place for our jupyter notebooks.
-* **output** - processed data, models.
+### `/jupyter-notebooks` machine-learning & deep-learning section
+<b>[$ github checkout machine-learning](https://github.com/LukSroczynski/playgrounds/tree/master/jupyter-notebooks/machine-learning)</b>
 
-```
-jupyter-notebooks
-│
-└───machine-learning 
-│   │
-│   └───input
-│   │
-│   └───notebooks
-│   │
-│   └───output
-```
-### `projects` Frontend and Backend
+### `/projects` frontend and backend section
 
-1. **ToDoList** 
+<b>[$ github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
 
- * **Backend: Layered Architecture** - Sample REST service implemented in <b>Layered Architecture</b>.
- * **Backend: Hexagonal Architecture** - Sample REST service implemented in <b>Hexagonal Architecture</b>. 
- * **Frontend** - Sample frondend implemented in <b>React.js</b>
-
-```
-projects 
-│
-└───ToDoList
-│   │
-│   └───to-do-list-layered-service
-│   │
-│   └───to-do-list-hexagonal-service
-│   │
-│   └───to-do-list-frontend
-```

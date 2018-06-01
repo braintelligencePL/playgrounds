@@ -1,32 +1,22 @@
 # ToDoList - Project
 
-## Working with application 
-Building tool: <b>Gradle</b>
-Languages used: <b>Java, Kotlin</b>
+## Working with application
 
-Running:
+To run application:
 ```
 ./gradlew bootRun
 ```
-### Unit Tests:
+To run unit tests
 ```
 ./gradlew test
 ```
-### Integration Tests:
+To run integration tests:
 ```
 ./gradlew integrationTest
 ```
 
 <br>
 
-### To do List - Layered Service 
-Sample REST service implemented using most popular **Layered Architecture**.
-
-### To do List - Hexagonal Service (soon)
-Sample REST service implemented using **Hexagonal Architecture**. 
-
-### To do List - Frontend (soon)
-Will be implemented in React.js
 # Endpoints:
 
 * `POST /list` - create new list
@@ -42,3 +32,15 @@ Will be implemented in React.js
 ## Additional features
 * Searching by task text - elasticsearch
 
+<br>
+
+# Implemented in architectures
+
+### To do List - Layered Service (in progress)
+Sample REST service implemented using most popular **Layered Architecture**.
+
+### To do List - Hexagonal Service (soon)
+Sample REST service implemented using **Hexagonal Architecture**. 
+
+### To do List - Frontend (soon)
+Will be implemented in React.js
