@@ -17,16 +17,14 @@ jupyter-notebooks
 │   └───notebooks
 │   │
 │   └───output
-
-
 ```
-### `projects` Web Programming - Projects
+### `projects` Frontend and Backend
 
 1. **ToDoList** 
 
- * **Backend: Java, Kotlin** - Sample REST service implemented using <b>Layered Architecture</b>.
- * **Backend: Java, Kotlin** - Sample REST service implemented using <b>Hexagonal Architecture</b>. 
- * **Frontend** - Sample frond-end implemented in <b>React.js</b>
+ * **Backend: Layered Architecture** - Sample REST service implemented in <b>Layered Architecture</b>.
+ * **Backend: Hexagonal Architecture** - Sample REST service implemented in <b>Hexagonal Architecture</b>. 
+ * **Frontend** - Sample frondend implemented in <b>React.js</b>
 
 ```
 projects 
