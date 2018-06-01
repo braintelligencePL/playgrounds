@@ -3,11 +3,11 @@ package pl.braintelligence.todolist
 import com.github.tomakehurst.wiremock.junit.WireMockRule
 import org.junit.Rule
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.data.mongodb.core.MongoTemplate
-import org.springframework.http.*
+import org.springframework.http.HttpEntity
+import org.springframework.http.HttpHeaders
 import spock.lang.Specification
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
@@ -33,14 +33,14 @@ class BaseIntegrationTest extends Specification {
     }
 
     void setupSpec() {
-        fixWireMock()
+        customSetupWiremock()
     }
 
     void setup() {
         clearMongoDb()
     }
 
-    private static void fixWireMock() {
+    private static void customSetupWiremock() {
         System.setProperty('http.keepAlive', 'false')
         System.setProperty('http.maxConnections', '1')
     }

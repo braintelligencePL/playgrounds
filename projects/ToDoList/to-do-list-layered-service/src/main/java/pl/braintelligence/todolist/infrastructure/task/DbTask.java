@@ -1,5 +1,6 @@
 package pl.braintelligence.todolist.infrastructure.task;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import pl.braintelligence.todolist.domain.task.Task;
 
@@ -9,6 +10,8 @@ import java.time.Instant;
 @Document(collection = "tasks")
 public class DbTask {
 
+    @Id
+    private String id;
     private String text;
     private Instant createdAt;
 
