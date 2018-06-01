@@ -20,7 +20,7 @@ jupyter-notebooks
 ```
 ### `projects` Frontend and Backend
 
-1. **ToDoList** 
+1. [checkout todolist »](https://github.com/LukSroczynski/playgrounds/blob/master/projects/ToDoList/README.md)
 
  * **Backend: Layered Architecture** - Sample REST service implemented in <b>Layered Architecture</b>.
  * **Backend: Hexagonal Architecture** - Sample REST service implemented in <b>Hexagonal Architecture</b>. 
