@@ -31,8 +31,8 @@ To run integration tests:
 
 <br>
 
-* `PUT /list/:id/task/:id` - for changing task text
-* `PUT /list/:id/` - for changing name of the list 
+* `PUT /list/:id/task/:id` - for changing text of the task
+* `PUT /list/:id/` - for changing name of the the list 
 
 <br>
 
