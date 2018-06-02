@@ -34,12 +34,12 @@ To run integration tests:
 
 <br>
 
-* `PUT /list/:id/task/:id` - for changing text of the task
+* `PUT /lists/:id/task/:id` - for changing text of the task
 
 <br>
 
-* `DELETE /list/:id` - delete list
-* `DELETE /list/:id/task/:id` - delete task
+* `DELETE /lists/:id` - delete list
+* `DELETE /lists/:id/task/:id` - delete task
 
 
 ## Additional features
