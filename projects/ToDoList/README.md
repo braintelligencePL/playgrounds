@@ -1,6 +1,6 @@
 # ToDoList - Project
 
-## Working with application
+## Working with backend application
 
 To run application:
 ```
@@ -19,15 +19,28 @@ To run integration tests:
 
 # Endpoints:
 
-* `POST /list` - create new list
+* `POST /lists` - create new list
 * `GET /lists` - retrieve all lists
 
-* `GET /list/:id/tasks?state=all` - get all tasks from specific list
-* `GET /list/:id/tasks?state=current` - get all tasks from specific list
-* `GET /list/:id/tasks?state=finished` - get all tasks from specific list
+<br>
 
-* `POST /list/:id/task` - add task to list
-* `PUT /list/:id/task` - change task state 
+* `POST /lists/:id/task` - add task to the list
+
+<br>
+
+* `GET /lists/:id/tasks` - retrieve all tasks from certain list
+* `GET /lists/:id/tasks/pending` - retrieve pending tasks from certain list
+* `GET /lists/:id/tasks/completed` - retrieve completed tasks from certain list
+
+<br>
+
+* `PUT /lists/:id/task/:id` - for changing text of the task
+
+<br>
+
+* `DELETE /lists/:id` - delete list
+* `DELETE /lists/:id/task/:id` - delete task
+
 
 ## Additional features
 * Searching by task text - elasticsearch
