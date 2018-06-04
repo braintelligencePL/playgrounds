@@ -36,7 +36,7 @@ public class DbTasksList {
 
     private static List<DbTask> toDbTask(List<Task> tasks) {
 
-        if (tasks == null) { //TODO: refactor to Optional.ofNullable
+        if (tasks == null) { //TODO: might be used Optional.ofNullable
             return new ArrayList<>();
         }
 

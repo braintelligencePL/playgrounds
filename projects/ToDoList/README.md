@@ -20,11 +20,11 @@ To run integration tests:
 # Endpoints:
 
 * `POST /lists` - create new list
-* `GET /lists` - retrieve all lists
+* `GET /lists` - retrieve all lists names
 
 <br>
 
-* `POST /lists/:id/task` - add task to the list
+* `POST /lists/:id/tasks` - add task to the list
 
 <br>
 
@@ -34,12 +34,12 @@ To run integration tests:
 
 <br>
 
-* `PUT /lists/:id/task/:id` - for changing text of the task
+* `PUT /lists/:id/tasks/:id` - for changing text of the task
 
 <br>
 
 * `DELETE /lists/:id` - delete list
-* `DELETE /lists/:id/task/:id` - delete task
+* `DELETE /lists/:id/tasks/:id` - delete task
 
 
 ## Features

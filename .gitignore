@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 jupyter-notebooks/machine-learning/input/*
 jupyter-notebooks/machine-learning/output/*
@@ -13,3 +14,7 @@ build
 classes
 out
 *.iml
+=======
+jupyter-notebooks/input/*
+
+>>>>>>> Stashed changes

@@ -3,6 +3,7 @@ package pl.braintelligence.todolist.application;
 import org.springframework.stereotype.Service;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTasksListDto;
+import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
 import pl.braintelligence.todolist.domain.taskslist.TasksList;
 import pl.braintelligence.todolist.domain.taskslist.TasksListRepository;
@@ -11,6 +12,7 @@ import java.util.List;
 
 import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToTask;
 import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToTasksList;
+import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToExistingTasksListDto;
 import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToTasksListDto;
 import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.EMPTY_TASKS_LIST;
 import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.LIST_ALREADY_EXISTS;
@@ -35,14 +37,14 @@ public class TasksListService {
         tasksListRepository.save(mapToTasksList(newTasksListDto));
     }
 
-    public List<TasksListDto> getTasksLists() {
+    public List<ExistingTasksListDto> getTasksLists() {
 
         List<TasksList> tasksLists = tasksListRepository.findAll();
 
         when(tasksLists.isEmpty())
                 .thenMissingEntity(EMPTY_TASKS_LIST, "Error getting tasks lists - none available");
 
-        return mapToTasksListDto(tasksLists);
+        return mapToExistingTasksListDto(tasksLists);
     }
 
     public void addTaskToTasksList(String listName, NewTaskDto newTaskDto) {
@@ -56,4 +58,9 @@ public class TasksListService {
 
     }
 
+    public TasksListDto getTasksList(String listName) {
+        TasksList tasksList = tasksListRepository.findByName(listName);
+
+        return mapToTasksListDto(tasksList);
+    }
 }

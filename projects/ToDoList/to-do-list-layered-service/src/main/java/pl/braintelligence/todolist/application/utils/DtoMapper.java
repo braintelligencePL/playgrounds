@@ -1,5 +1,6 @@
 package pl.braintelligence.todolist.application.utils;
 
+import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
@@ -18,22 +19,38 @@ public class DtoMapper {
         );
     }
 
-    public static List<TasksListDto> mapToTasksListDto(List<TasksList> tasksLists) {
+    public static List<ExistingTasksListDto> mapToExistingTasksListDto(List<TasksList> tasksLists) {
         return tasksLists.stream()
-                .map(DtoMapper::mapToTasksListDto)
+                .map(DtoMapper::mapToExistingTasksListDto)
                 .collect(toList());
     }
 
-    private static TasksListDto mapToTasksListDto(TasksList tasksList) {
-        TasksListDto tasksListDto = new TasksListDto();
-        tasksListDto.setName(tasksList.getName());
-        return tasksListDto;
+    private static ExistingTasksListDto mapToExistingTasksListDto(TasksList tasksList) {
+        ExistingTasksListDto existingTasksListDto = new ExistingTasksListDto();
+        existingTasksListDto.setName(tasksList.getName());
+        return existingTasksListDto;
     }
 
     public static Task mapToTask(NewTaskDto newTaskDto) {
         return new Task(
                 newTaskDto.getText()
         );
+    }
+
+    public static TasksListDto mapToTasksListDto(TasksList tasksList) {
+        TasksListDto tasksListDto = new TasksListDto();
+        tasksListDto.setName(tasksList.getName());
+        tasksListDto.setTasks(
+                tasksList.getTasks().stream()
+                        .map(DtoMapper::mapToTasksListDto)
+                        .collect(toList()));
+        return tasksListDto;
+    }
+
+    private static pl.braintelligence.todolist.application.dto.Task mapToTasksListDto(Task task) {
+        pl.braintelligence.todolist.application.dto.Task tasksDto = new pl.braintelligence.todolist.application.dto.Task();
+        tasksDto.setText(task.getText());
+        return tasksDto;
     }
 
 }

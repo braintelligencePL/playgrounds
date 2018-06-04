@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.braintelligence.todolist.application.TasksListService;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTasksListDto;
+import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
 
 import java.util.List;
@@ -37,7 +38,7 @@ public class TasksListEndpoint {
     @ResponseStatus(OK)
     @ResponseBody
     @GetMapping(produces = "application/json")
-    public List<TasksListDto> getTasksLists() {
+    public List<ExistingTasksListDto> getTasksLists() {
         return tasksListService.getTasksLists();
     }
 
@@ -46,5 +47,15 @@ public class TasksListEndpoint {
     public void addTaskToTasksList(@PathVariable String listName, @RequestBody NewTaskDto newTaskDto) {
         tasksListService.addTaskToTasksList(listName, newTaskDto);
     }
+
+    @ResponseStatus(OK)
+    @GetMapping(value = "/{listName}")
+    public TasksListDto getTasksList(@PathVariable String listName) {
+
+        tasksListService.getTasksList(listName);
+
+        return tasksListService.getTasksList(listName);
+    }
+
 
 }
