@@ -28,7 +28,7 @@ To run integration tests:
 
 <br>
 
-* `GET /lists/:id/tasks` - retrieve all tasks from certain list
+* `GET /lists/:id` - get certain list with tasks
 * `GET /lists/:id/tasks/pending` - retrieve pending tasks from certain list
 * `GET /lists/:id/tasks/completed` - retrieve completed tasks from certain list
 
@@ -48,6 +48,8 @@ To run integration tests:
 ## Additional features
 - [ ] Search all tasks by text ( elasticsearch )
 
+## Possible optimizations (future)
+- [ ] Don't return whole object just tasks `GET /lists/:id` -> `GET /lists/:id/tasks`
 
 <br>
 
