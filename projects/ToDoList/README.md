@@ -42,8 +42,11 @@ To run integration tests:
 * `DELETE /lists/:id/task/:id` - delete task
 
 
-## Additional features
+## Features
 * Searching by task text - elasticsearch
+
+- [ ] Mercury
+- [x] Venus
 
 <br>
 
