@@ -42,8 +42,12 @@ To run integration tests:
 * `DELETE /lists/:id/task/:id` - delete task
 
 
+## Features
+- [ ] Mock sample data into DB on start
+
 ## Additional features
-* Searching by task text - elasticsearch
+- [ ] Search all tasks by text ( elasticsearch )
+
 
 <br>
 
