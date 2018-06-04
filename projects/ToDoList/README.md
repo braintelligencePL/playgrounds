@@ -43,10 +43,11 @@ To run integration tests:
 
 
 ## Features
-* Searching by task text - elasticsearch
+- [ ] mock data loaded on start
 
-- [ ] Mercury
-- [x] Venus
+## Additional features
+- [ ] search by task text ( elasticsearch )
+
 
 <br>
 
