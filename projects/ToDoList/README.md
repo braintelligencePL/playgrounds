@@ -49,7 +49,7 @@ To run integration tests:
 - [ ] Search all tasks by text ( elasticsearch )
 
 ## Possible optimizations (future)
-- [ ] Don't return whole object just tasks `GET /lists/:id` -> `GET /lists/:id/tasks`
+- [ ] Don't return whole object TasksList take just tasks `GET /lists/:id` -- TO --> `GET /lists/:id/tasks`
 
 <br>
 
