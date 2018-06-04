@@ -43,10 +43,10 @@ To run integration tests:
 
 
 ## Features
-- [ ] mock data loaded on start
+- [ ] Mock sample data into DB on start
 
 ## Additional features
-- [ ] search by task text ( elasticsearch )
+- [ ] Search all tasks by text ( elasticsearch )
 
 
 <br>
