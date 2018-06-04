@@ -1,7 +1,9 @@
 package pl.braintelligence.todolist.application.utils;
 
+import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
+import pl.braintelligence.todolist.domain.taskslist.Task;
 import pl.braintelligence.todolist.domain.taskslist.TasksList;
 
 import java.util.List;
@@ -26,6 +28,12 @@ public class DtoMapper {
         TasksListDto tasksListDto = new TasksListDto();
         tasksListDto.setName(tasksList.getName());
         return tasksListDto;
+    }
+
+    public static Task mapToTask(NewTaskDto newTaskDto) {
+        return new Task(
+                newTaskDto.getText()
+        );
     }
 
 }

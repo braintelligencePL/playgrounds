@@ -1,35 +1,52 @@
 package pl.braintelligence.todolist.infrastructure.persistance;
 
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
+import pl.braintelligence.todolist.domain.taskslist.Task;
 import pl.braintelligence.todolist.domain.taskslist.TasksList;
 import pl.braintelligence.todolist.domain.taskslist.TasksListRepository;
-import pl.braintelligence.todolist.infrastructure.task.DbTasksList;
-import pl.braintelligence.todolist.infrastructure.task.DbTaskRepository;
+import pl.braintelligence.todolist.infrastructure.taskslist.DbTask;
+import pl.braintelligence.todolist.infrastructure.taskslist.DbTasksList;
+import pl.braintelligence.todolist.infrastructure.taskslist.DbTasksListRepository;
 
 import java.util.List;
 
 @Repository
 public class TasksListRepositoryImpl implements TasksListRepository {
 
-    private DbTaskRepository dbTaskRepository;
+    private DbTasksListRepository dbTasksListRepository;
 
-    public TasksListRepositoryImpl(DbTaskRepository dbTaskRepository) {
-        this.dbTaskRepository = dbTaskRepository;
+    private MongoTemplate mongo;
+
+    public TasksListRepositoryImpl(DbTasksListRepository dbTasksListRepository, MongoTemplate mongo) {
+        this.dbTasksListRepository = dbTasksListRepository;
+        this.mongo = mongo;
     }
 
     @Override
     public void save(TasksList tasksList) {
-        dbTaskRepository.save(DbTasksList.fromTasksList(tasksList));
+        dbTasksListRepository.save(DbTasksList.fromTasksList(tasksList));
+    }
+
+    @Override
+    public void save(Task task, TasksList tasksList) {
+        tasksList.addTask(task);
+        dbTasksListRepository.save(DbTasksList.fromTasksList(tasksList));
     }
 
     @Override
     public Boolean existsByName(String name) {
-        return dbTaskRepository.existsByName(name);
+        return dbTasksListRepository.existsById(name);
     }
 
     @Override
     public List<TasksList> findAll() {
-        return DbTasksList.toTasksList(dbTaskRepository.findAll());
+        return DbTasksList.toTasksList(dbTasksListRepository.findAll());
+    }
+
+    @Override
+    public TasksList findByName(String name) {
+        return DbTasksList.toTasksList(mongo.findById(name, DbTasksList.class));
     }
 
 }

@@ -53,7 +53,7 @@ class BaseIntegrationTest extends Specification {
         }
     }
 
-    protected static <T> HttpEntity<T> prepareHttpEntity(T data, Map<String, List<String>> additionalHeaders = [:]) {
+    protected static <T> HttpEntity<T> preparePayload(T data, Map<String, List<String>> additionalHeaders = [:]) {
         def headers = new HttpHeaders()
 
         headers.putAll(additionalHeaders)
