@@ -48,6 +48,8 @@ To run integration tests:
 ## Additional features
 - [ ] Search all tasks by text ( elasticsearch )
 
+## Possible optymalizations
+- [ ] Don't return whole object just tasks `GET /lists/:id` -> `GET /lists/:id/tasks`
 
 <br>
 
