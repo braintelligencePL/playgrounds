@@ -24,11 +24,11 @@ To run integration tests:
 
 <br>
 
-* `POST /lists/:id/task` - add task to the list
+* `POST /lists/:id/tasks` - add task to the list
 
 <br>
 
-* `GET /lists/:id/tasks` - retrieve all tasks from certain list
+* `GET /lists/:id` - get certain list with tasks
 * `GET /lists/:id/tasks/pending` - retrieve pending tasks from certain list
 * `GET /lists/:id/tasks/completed` - retrieve completed tasks from certain list
 
