@@ -55,7 +55,7 @@ class TasksListEndpointTest extends BaseIntegrationTest {
         given:
         post("/lists", newTasksListDto1)
         def task1 = "WATCH Rick and Morty!"
-        def task2 = "WATCH Rick and Morty!"
+        def task2 = "Watch Game of Thrones"
         def newTaskDto1 = new NewTaskDto(text: task1)
         def newTaskDto2 = new NewTaskDto(text: task2)
 
