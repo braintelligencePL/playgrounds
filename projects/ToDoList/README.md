@@ -44,6 +44,8 @@ To run integration tests:
 
 ## Features
 - [ ] Mock sample data into DB on start
+- [ ] Task priority
+- [ ] Sort by createdAt and priority? 
 
 ## Additional features
 - [ ] Search all tasks by text ( elasticsearch )
