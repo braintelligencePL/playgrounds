@@ -57,7 +57,7 @@ To run integration tests:
 <br>
 
 ## Fixes (to verify)
-`public static Task mapToTask(NewTaskDto newTaskDto)`
+`public static Task mapToTask(NewTaskDto newTaskDto)` - probably setting TaskState in mapper is a bad idea
 
 
 # Implemented in architectures
