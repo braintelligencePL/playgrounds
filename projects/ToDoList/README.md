@@ -56,6 +56,10 @@ To run integration tests:
 
 <br>
 
+## Fixes (to verify)
+`public static Task mapToTask(NewTaskDto newTaskDto)`
+
+
 # Implemented in architectures
 
 ### To do List - Layered Service (in progress)
