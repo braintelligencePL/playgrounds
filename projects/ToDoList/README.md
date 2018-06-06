@@ -46,6 +46,7 @@ To run integration tests:
 - [ ] Mock sample data into DB on start
 - [ ] Task priority
 - [ ] Sort by createdAt and priority? 
+- [ ] OAuth2 for login/registration for app
 
 ## Additional features
 - [ ] Search all tasks by text ( configure elasticsearch )
