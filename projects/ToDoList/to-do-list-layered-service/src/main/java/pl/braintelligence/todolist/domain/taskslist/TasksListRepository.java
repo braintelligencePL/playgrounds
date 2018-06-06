@@ -6,8 +6,6 @@ public interface TasksListRepository {
 
     void save(TasksList tasksList);
 
-    void save(Task task, TasksList tasksList);
-
     Boolean existsByName(String name);
 
     List<TasksList> findAll();

@@ -16,7 +16,7 @@ import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToExist
 import static pl.braintelligence.todolist.application.utils.DtoMapper.mapToTasksListDto;
 import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.EMPTY_TASKS_LIST;
 import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.LIST_ALREADY_EXISTS;
-import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.NONEXISTENT_TASKS_LIST;
+import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.NON_EXISTENT_TASKS_LIST;
 import static pl.braintelligence.todolist.domain.exceptions.PreCondition.when;
 
 
@@ -49,12 +49,14 @@ public class TasksListService {
 
     public void addTaskToTasksList(String listName, NewTaskDto newTaskDto) {
 
-        TasksList tasksList = tasksListRepository.findByName(listName); // may be optimized (don't take whole object from DB)
+        TasksList tasksList = tasksListRepository.findByName(listName); // may be optimized
 
         when(tasksList.getName() == null)
-                .thenMissingEntity(NONEXISTENT_TASKS_LIST, "Error adding task to '" + listName + "' tasksList - list doesn't exists");
+                .thenMissingEntity(NON_EXISTENT_TASKS_LIST, "Error adding task to '" + listName + "' tasksList - list doesn't exists");
 
-        tasksListRepository.save(mapToTask(newTaskDto), tasksList);
+        tasksList.addTask(mapToTask(newTaskDto));
+
+        tasksListRepository.save(tasksList);
 
     }
 
@@ -63,4 +65,5 @@ public class TasksListService {
 
         return mapToTasksListDto(tasksList);
     }
+
 }

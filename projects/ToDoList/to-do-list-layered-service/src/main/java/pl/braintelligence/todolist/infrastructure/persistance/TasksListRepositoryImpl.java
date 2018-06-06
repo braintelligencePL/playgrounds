@@ -1,11 +1,11 @@
 package pl.braintelligence.todolist.infrastructure.persistance;
 
+import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 import pl.braintelligence.todolist.domain.taskslist.Task;
 import pl.braintelligence.todolist.domain.taskslist.TasksList;
 import pl.braintelligence.todolist.domain.taskslist.TasksListRepository;
-import pl.braintelligence.todolist.infrastructure.taskslist.DbTask;
 import pl.braintelligence.todolist.infrastructure.taskslist.DbTasksList;
 import pl.braintelligence.todolist.infrastructure.taskslist.DbTasksListRepository;
 
@@ -16,7 +16,7 @@ public class TasksListRepositoryImpl implements TasksListRepository {
 
     private DbTasksListRepository dbTasksListRepository;
 
-    private MongoTemplate mongo;
+    private MongoOperations mongo;
 
     public TasksListRepositoryImpl(DbTasksListRepository dbTasksListRepository, MongoTemplate mongo) {
         this.dbTasksListRepository = dbTasksListRepository;
@@ -25,12 +25,6 @@ public class TasksListRepositoryImpl implements TasksListRepository {
 
     @Override
     public void save(TasksList tasksList) {
-        dbTasksListRepository.save(DbTasksList.fromTasksList(tasksList));
-    }
-
-    @Override
-    public void save(Task task, TasksList tasksList) {
-        tasksList.addTask(task);
         dbTasksListRepository.save(DbTasksList.fromTasksList(tasksList));
     }
 

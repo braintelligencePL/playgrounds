@@ -6,6 +6,7 @@ import pl.braintelligence.todolist.application.dto.NewTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
 import pl.braintelligence.todolist.domain.taskslist.Task;
 import pl.braintelligence.todolist.domain.taskslist.TasksList;
+import pl.braintelligence.todolist.domain.values.TaskState;
 
 import java.util.List;
 
@@ -33,7 +34,8 @@ public class DtoMapper {
 
     public static Task mapToTask(NewTaskDto newTaskDto) {
         return new Task(
-                newTaskDto.getText()
+                newTaskDto.getText(),
+                TaskState.PENDING
         );
     }
 

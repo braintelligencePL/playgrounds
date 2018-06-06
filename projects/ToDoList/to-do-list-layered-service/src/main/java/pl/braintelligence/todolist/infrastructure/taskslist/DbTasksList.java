@@ -46,7 +46,7 @@ public class DbTasksList {
     }
 
     public static DbTask toDbTask(Task task) {
-        return new DbTask(task.getText());
+        return new DbTask(task.getText(), task.getTaskState());
     }
 
     public static List<TasksList> toTasksList(List<DbTasksList> dbTasksList) {

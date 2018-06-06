@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import pl.braintelligence.todolist.application.TasksListService;
+import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTasksListDto;
-import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
 import pl.braintelligence.todolist.application.dto.TasksListDto;
 
 import java.util.List;
@@ -49,11 +49,9 @@ public class TasksListEndpoint {
     }
 
     @ResponseStatus(OK)
-    @GetMapping(value = "/{listName}")
+    @GetMapping(value = "/{listName}", produces = "application/json")
     public TasksListDto getTasksList(@PathVariable String listName) {
-
         tasksListService.getTasksList(listName);
-
         return tasksListService.getTasksList(listName);
     }
 

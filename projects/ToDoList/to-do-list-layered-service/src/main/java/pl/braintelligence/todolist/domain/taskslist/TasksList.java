@@ -20,6 +20,7 @@ public class TasksList {
     }
 
     public TasksList(String name, List<Task> tasks, Instant createdAt) {
+        validateName(name);
         this.name = name;
         this.tasks = tasks;
         this.createdAt = createdAt;

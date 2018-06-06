@@ -22,7 +22,7 @@ import static org.springframework.http.HttpMethod.POST
 import static org.springframework.http.HttpMethod.PUT
 
 @SpringBootTest(webEnvironment = RANDOM_PORT)
-class BaseIntegrationTest extends Specification {
+class BaseSetupIntegrationTest extends Specification {
 
     @Rule
     public WireMockRule wireMockRule = new WireMockRule(12346)
@@ -33,24 +33,12 @@ class BaseIntegrationTest extends Specification {
     @Autowired
     private MongoTemplate mongo
 
-
     void setupSpec() {
         customSetupWiremock()
     }
 
     void setup() {
         clearMongoDb()
-    }
-
-    private static void customSetupWiremock() {
-        System.setProperty('http.keepAlive', 'false')
-        System.setProperty('http.maxConnections', '1')
-    }
-
-    private void clearMongoDb() {
-        for (def collection : mongo.collectionNames) {
-            mongo.dropCollection(collection)
-        }
     }
 
     protected static <T> HttpEntity<T> preparePayload(T data, Map<String, List<String>> additionalHeaders = [:]) {
@@ -92,5 +80,16 @@ class BaseIntegrationTest extends Specification {
     private <T> ResponseEntity<T> sendRequest(String uri, HttpMethod method, Object requestBody, ParameterizedTypeReference<T> responseBodyType) {
         def entity = new HttpEntity<>(requestBody)
         return restTemplate.exchange(uri, method, entity, responseBodyType)
+    }
+
+    private static void customSetupWiremock() {
+        System.setProperty('http.keepAlive', 'false')
+        System.setProperty('http.maxConnections', '1')
+    }
+
+    private void clearMongoDb() {
+        for (def collection : mongo.collectionNames) {
+            mongo.dropCollection(collection)
+        }
     }
 }
