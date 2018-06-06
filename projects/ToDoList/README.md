@@ -48,7 +48,7 @@ To run integration tests:
 - [ ] Sort by createdAt and priority? 
 
 ## Additional features
-- [ ] Search all tasks by text ( elasticsearch )
+- [ ] Search all tasks by text ( configure elasticsearch )
 
 ## Possible optimizations (future)
 - [ ] Don't return whole object TasksList take just tasks `GET /lists/:id` ---> `GET /lists/:id/tasks`
