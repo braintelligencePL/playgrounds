@@ -23,12 +23,12 @@ All in one before push to repo:
 
 # Endpoints:
 
-* [x] `POST /lists` - Create NEW List
+* [x] `POST /lists` - create new List
 * [x] `GET /lists` - get all lists-names
 
 <br>
 
-* [x] `POST /lists/:id/tasks` - add new task to list
+* [x] `POST /lists/:id/tasks` - add new task to the list
 * [x] `GET /lists/:id` - get list with tasks
 
 <br>
