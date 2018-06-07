@@ -51,7 +51,7 @@ public class TasksListService {
 
         TasksList tasksList = tasksListRepository.findByName(listName); // may be optimized
 
-        when(tasksList.getName() == null)
+        when(tasksList == null)
                 .thenMissingEntity(NON_EXISTENT_TASKS_LIST, "Error adding task to '" + listName + "' tasksList - list doesn't exists");
 
         tasksList.addTask(mapToTask(newTaskDto));

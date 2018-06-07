@@ -23,4 +23,15 @@ public class TasksListDto {
         this.tasks = tasks;
     }
 
+    public static class Task {
+        private String text;
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
+    }
 }

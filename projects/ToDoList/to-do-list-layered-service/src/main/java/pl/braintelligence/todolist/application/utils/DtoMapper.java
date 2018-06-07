@@ -49,8 +49,8 @@ public class DtoMapper {
         return tasksListDto;
     }
 
-    private static pl.braintelligence.todolist.application.dto.Task mapToTasksListDto(Task task) {
-        pl.braintelligence.todolist.application.dto.Task tasksDto = new pl.braintelligence.todolist.application.dto.Task();
+    private static TasksListDto.Task mapToTasksListDto(Task task) {
+        TasksListDto.Task tasksDto = new TasksListDto.Task();
         tasksDto.setText(task.getText());
         return tasksDto;
     }

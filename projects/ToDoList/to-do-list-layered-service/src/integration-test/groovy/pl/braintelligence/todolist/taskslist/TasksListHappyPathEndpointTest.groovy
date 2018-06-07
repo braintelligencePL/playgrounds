@@ -7,7 +7,7 @@ import pl.braintelligence.todolist.application.dto.TasksListDto
 
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY
 
-class TasksListEndpointTestSetup extends BaseSetupIntegrationTest implements SampleData {
+class TasksListHappyPathEndpointTest extends BaseSetupIntegrationTest implements SampleData {
 
     def "Should create 2 new TasksList AND return it"() {
         given:
@@ -49,37 +49,5 @@ class TasksListEndpointTestSetup extends BaseSetupIntegrationTest implements Sam
         response.body.tasks[1].text == newTaskDto2.text
 
     }
-
-    def "Should not create TasksList with the same name"() {
-
-        when:
-        def response = post("/lists", blog_list)
-        response = post("/lists", blog_list)
-
-        then:
-        response.statusCode == UNPROCESSABLE_ENTITY
-
-    }
-
-    def "Should not create list without name"() {
-
-        when:
-        def response = post("/lists", emptyTasksListDto)
-
-        then:
-        response.statusCode == UNPROCESSABLE_ENTITY
-        response.body.code == 'EMPTY_LIST_NAME'
-    }
-
-    def "Should not add task to non-existent-list"() {
-        when:
-        def response = get("/lists/$blog_list.name", TasksListDto.class)
-
-        then:
-        response.statusCode == UNPROCESSABLE_ENTITY
-        response.body.code == 'NON_EXISTENT_TASKS_LIST'
-    }
-
-
 
 }

@@ -40,7 +40,14 @@ public class TasksListRepositoryImpl implements TasksListRepository {
 
     @Override
     public TasksList findByName(String name) {
-        return DbTasksList.toTasksList(mongo.findById(name, DbTasksList.class));
+
+        DbTasksList dbTasksList = mongo.findById(name, DbTasksList.class);
+
+        if(dbTasksList != null) {
+            return DbTasksList.toTasksList(dbTasksList);
+        }
+
+        return null;
     }
 
 }

@@ -15,8 +15,6 @@ import spock.lang.Specification
 
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
 import static org.springframework.http.HttpMethod.GET
-import static org.springframework.http.HttpMethod.GET
-import static org.springframework.http.HttpMethod.PATCH
 import static org.springframework.http.HttpMethod.PATCH
 import static org.springframework.http.HttpMethod.POST
 import static org.springframework.http.HttpMethod.PUT
@@ -34,7 +32,7 @@ class BaseSetupIntegrationTest extends Specification {
     private MongoTemplate mongo
 
     void setupSpec() {
-        customSetupWiremock()
+        customWiremockSetup()
     }
 
     void setup() {
@@ -82,7 +80,7 @@ class BaseSetupIntegrationTest extends Specification {
         return restTemplate.exchange(uri, method, entity, responseBodyType)
     }
 
-    private static void customSetupWiremock() {
+    private static void customWiremockSetup() {
         System.setProperty('http.keepAlive', 'false')
         System.setProperty('http.maxConnections', '1')
     }
