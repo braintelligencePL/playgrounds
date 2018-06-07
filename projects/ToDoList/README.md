@@ -19,16 +19,16 @@ To run integration tests:
 
 # Endpoints:
 
-* [x] `POST /lists` - create new list
-* [ ] `GET /lists` - retrieve all lists names
+* [x] `POST /lists` - Create NEW List
+* [x] `GET /lists` - get all lists-names
 
 <br>
 
-* [ ] `POST /lists/:id/tasks` - add task to the list
+* [x] `POST /lists/:id/tasks` - add new task to list
+* [x] `GET /lists/:id` - get list with tasks
 
 <br>
 
-* [ ] `GET /lists/:id` - get certain list with tasks
 * [ ] `GET /lists/:id/tasks/pending` - retrieve pending tasks from certain list
 * [ ] `GET /lists/:id/tasks/completed` - retrieve completed tasks from certain list
 
