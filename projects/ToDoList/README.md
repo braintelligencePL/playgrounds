@@ -14,6 +14,10 @@ To run integration tests:
 ```
 ./gradlew integrationTest
 ```
+To run all in one:
+```
+./gradlew clean build test integrationTest
+```
 
 <br>
 
