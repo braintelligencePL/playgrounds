@@ -19,7 +19,7 @@ To run integration tests:
 
 # Endpoints:
 
-* [ ] `POST /lists` - create new list
+* [x] `POST /lists` - create new list
 * [ ] `GET /lists` - retrieve all lists names
 
 <br>
