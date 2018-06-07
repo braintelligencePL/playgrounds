@@ -54,6 +54,7 @@ All in one before push to repo:
 
 ## Additional features
 - [ ] Search all tasks by text ( configure elasticsearch )
+- [ ] Public and private endpoints (counter users - home page)
 
 ## Possible optimizations (future)
 - [ ] Don't return whole object TasksList take just tasks `GET /lists/:id` ---> `GET /lists/:id/tasks`
