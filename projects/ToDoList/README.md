@@ -14,7 +14,7 @@ To run integration tests:
 ```
 ./gradlew integrationTest
 ```
-To run all in one:
+All in one before push to repo:
 ```
 ./gradlew clean build test integrationTest
 ```
