@@ -57,7 +57,7 @@ ONE TO RULE THEM ALL:
 
 ## Additional features
 - [ ] Search all tasks by text ( configure elasticsearch )
-- [ ] Public and private endpoints (counter users - home page)
+- [ ] Public and private endpoints ( plus useless endpoint that counts users )
 
 ## Possible optimizations (future)
 - [ ] Don't return whole object TasksList take just tasks `GET /lists/:id` ---> `GET /lists/:id/tasks`
