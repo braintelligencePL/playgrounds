@@ -52,7 +52,7 @@ ONE TO RULE THEM ALL:
 - [ ] Mock sample data into DB on start
 - [ ] Task priority
 - [ ] Sort by createdAt and priority? 
-- [ ] OAuth2 for login/registration for app
+- [ ] OAuth2 for login/registration
 
 ## Additional features
 - [ ] Search all tasks by text ( configure elasticsearch )
