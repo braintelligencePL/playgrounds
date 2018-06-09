@@ -51,7 +51,7 @@ ONE TO RULE THEM ALL:
 
 ## Features
 - [ ] Mock sample data into DB on start
-- [ ] Task priority
+- [ ] Task priority and sorting list
 - [ ] Sort by createdAt and priority? 
 - [ ] OAuth2 for login/registration
 
