@@ -15,7 +15,9 @@ To run integration tests:
 ./gradlew integrationTest
 ```
 ONE TO RULE THEM ALL:
-`./gradlew clean build test integrationTest`
+```
+./gradlew clean build test integrationTest
+```
 
 <br>
 
