@@ -64,7 +64,6 @@ All in one before push to repo:
 ## Fixes (to verify)
 `public static Task mapToTask(NewTaskDto newTaskDto)` - probably setting TaskState in mapper is a bad idea
 
-
 # Implemented in architectures
 
 ### To do List - Layered Service (in progress)
@@ -75,3 +74,7 @@ Sample REST service implemented using **Hexagonal Architecture**.
 
 ### To do List - Frontend (soon)
 Will be implemented in React.js
+
+
+# Refactor todo:
+- [ ] TasksList rename to TodoList
