@@ -1,4 +1,4 @@
-package pl.braintelligence.todolist.domain.taskslist;
+package pl.braintelligence.todolist.domain.todolist;
 
 import java.time.Instant;
 import java.util.List;

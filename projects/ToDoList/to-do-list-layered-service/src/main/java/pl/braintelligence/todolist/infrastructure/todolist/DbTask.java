@@ -1,7 +1,7 @@
-package pl.braintelligence.todolist.infrastructure.taskslist;
+package pl.braintelligence.todolist.infrastructure.todolist;
 
 import org.springframework.data.annotation.Id;
-import pl.braintelligence.todolist.domain.taskslist.Task;
+import pl.braintelligence.todolist.domain.todolist.Task;
 import pl.braintelligence.todolist.domain.values.Status;
 
 import java.util.List;

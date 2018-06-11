@@ -1,9 +1,9 @@
-package pl.braintelligence.todolist.infrastructure.taskslist;
+package pl.braintelligence.todolist.infrastructure.todolist;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import pl.braintelligence.todolist.domain.taskslist.Task;
-import pl.braintelligence.todolist.domain.taskslist.TodoList;
+import pl.braintelligence.todolist.domain.todolist.Task;
+import pl.braintelligence.todolist.domain.todolist.TodoList;
 
 import java.time.Clock;
 import java.time.Instant;

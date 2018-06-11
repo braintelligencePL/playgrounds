@@ -1,4 +1,4 @@
-package pl.braintelligence.todolist.infrastructure.taskslist;
+package pl.braintelligence.todolist.infrastructure.todolist;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

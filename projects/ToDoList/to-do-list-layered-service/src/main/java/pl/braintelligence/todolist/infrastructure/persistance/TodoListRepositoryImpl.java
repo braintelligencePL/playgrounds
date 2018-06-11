@@ -3,10 +3,10 @@ package pl.braintelligence.todolist.infrastructure.persistance;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
-import pl.braintelligence.todolist.domain.taskslist.TodoList;
-import pl.braintelligence.todolist.domain.taskslist.TodoListRepository;
-import pl.braintelligence.todolist.infrastructure.taskslist.DbTodoList;
-import pl.braintelligence.todolist.infrastructure.taskslist.DbTodoListRepository;
+import pl.braintelligence.todolist.domain.todolist.TodoList;
+import pl.braintelligence.todolist.domain.todolist.TodoListRepository;
+import pl.braintelligence.todolist.infrastructure.todolist.DbTodoList;
+import pl.braintelligence.todolist.infrastructure.todolist.DbTodoListRepository;
 
 import java.util.List;
 

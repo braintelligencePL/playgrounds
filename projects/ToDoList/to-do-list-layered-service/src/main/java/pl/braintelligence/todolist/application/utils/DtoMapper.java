@@ -4,8 +4,8 @@ import pl.braintelligence.todolist.application.dto.ExistingTodoListsNamesDto;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
 import pl.braintelligence.todolist.application.dto.NewTodoListDto;
 import pl.braintelligence.todolist.application.dto.TodoListDto;
-import pl.braintelligence.todolist.domain.taskslist.Task;
-import pl.braintelligence.todolist.domain.taskslist.TodoList;
+import pl.braintelligence.todolist.domain.todolist.Task;
+import pl.braintelligence.todolist.domain.todolist.TodoList;
 import pl.braintelligence.todolist.domain.values.Status;
 
 import java.util.List;
