@@ -3,7 +3,7 @@ package pl.braintelligence.todolist.infrastructure.taskslist;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import pl.braintelligence.todolist.domain.taskslist.Task;
-import pl.braintelligence.todolist.domain.taskslist.TasksList;
+import pl.braintelligence.todolist.domain.taskslist.TodoList;
 
 import java.time.Clock;
 import java.time.Instant;
@@ -12,24 +12,24 @@ import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
-@Document(collection = "tasks_list")
-public class DbTasksList {
+@Document(collection = "todo_list")
+public class DbTodoList {
 
     @Id
     private String name;
     private List<DbTask> tasks;
     private Instant createdAt;
 
-    private DbTasksList(String name, List<DbTask> tasks, Instant createdAt) {
+    private DbTodoList(String name, List<DbTask> tasks, Instant createdAt) {
         this.name = name;
         this.tasks = tasks;
         this.createdAt = createdAt;
     }
 
-    public static DbTasksList fromTasksList(TasksList tasksList) {
-        return new DbTasksList(
-                tasksList.getName(),
-                toDbTask(tasksList.getTasks()),
+    public static DbTodoList fromTasksList(TodoList todoList) {
+        return new DbTodoList(
+                todoList.getName(),
+                toDbTask(todoList.getTasks()),
                 Instant.now(Clock.systemUTC())
         );
     }
@@ -41,25 +41,25 @@ public class DbTasksList {
         }
 
         return tasks.stream()
-                .map(DbTasksList::toDbTask)
+                .map(DbTodoList::toDbTask)
                 .collect(toList());
     }
 
     public static DbTask toDbTask(Task task) {
-        return new DbTask(task.getText(), task.getTaskState());
+        return new DbTask(task.getText(), task.getStatus());
     }
 
-    public static List<TasksList> toTasksList(List<DbTasksList> dbTasksList) {
-        return dbTasksList.stream()
-                .map(DbTasksList::toTasksList)
+    public static List<TodoList> toTasksList(List<DbTodoList> dbTodoList) {
+        return dbTodoList.stream()
+                .map(DbTodoList::toTasksList)
                 .collect(toList());
     }
 
-    public static TasksList toTasksList(DbTasksList dbTasksList) {
-        return new TasksList(
-                dbTasksList.name,
-                DbTask.toTask(dbTasksList.tasks),
-                dbTasksList.createdAt
+    public static TodoList toTasksList(DbTodoList dbTodoList) {
+        return new TodoList(
+                dbTodoList.name,
+                DbTask.toTask(dbTodoList.tasks),
+                dbTodoList.createdAt
         );
     }
 

@@ -1,6 +1,6 @@
 package pl.braintelligence.todolist.domain.values;
 
-public enum TaskState {
+public enum Status {
 
     PENDING,
     COMPLETED,

@@ -1,6 +1,6 @@
 package pl.braintelligence.todolist.application.dto;
 
-public class NewTasksListDto {
+public class ExistingTodoListsNamesDto {
 
     private String name;
 

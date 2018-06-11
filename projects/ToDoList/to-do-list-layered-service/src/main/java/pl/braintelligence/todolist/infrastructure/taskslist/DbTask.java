@@ -2,7 +2,7 @@ package pl.braintelligence.todolist.infrastructure.taskslist;
 
 import org.springframework.data.annotation.Id;
 import pl.braintelligence.todolist.domain.taskslist.Task;
-import pl.braintelligence.todolist.domain.values.TaskState;
+import pl.braintelligence.todolist.domain.values.Status;
 
 import java.util.List;
 
@@ -12,11 +12,11 @@ public class DbTask {
 
     @Id
     private String text;
-    private TaskState taskState;
+    private Status status;
 
-    public DbTask(String text, TaskState taskState) {
+    public DbTask(String text, Status status) {
         this.text = text;
-        this.taskState = taskState;
+        this.status = status;
     }
 
     public static List<Task> toTask(List<DbTask> dbTasks) {
@@ -28,7 +28,7 @@ public class DbTask {
     private static Task toTask(DbTask dbTask) {
         return new Task(
                 dbTask.text,
-                dbTask.taskState);
+                dbTask.status);
     }
 
 }

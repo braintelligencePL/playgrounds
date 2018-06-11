@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import pl.braintelligence.todolist.application.TasksListService;
-import pl.braintelligence.todolist.application.dto.ExistingTasksListDto;
+import pl.braintelligence.todolist.application.TodoListService;
+import pl.braintelligence.todolist.application.dto.ExistingTodoListsNamesDto;
 import pl.braintelligence.todolist.application.dto.NewTaskDto;
-import pl.braintelligence.todolist.application.dto.NewTasksListDto;
-import pl.braintelligence.todolist.application.dto.TasksListDto;
+import pl.braintelligence.todolist.application.dto.NewTodoListDto;
+import pl.braintelligence.todolist.application.dto.TodoListDto;
 
 import java.util.List;
 
@@ -21,38 +21,37 @@ import static org.springframework.http.HttpStatus.OK;
 
 @RestController
 @RequestMapping("/lists")
-public class TasksListEndpoint {
+public class TodoListEndpoint {
 
-    private final TasksListService tasksListService;
+    private final TodoListService todoListService;
 
-    public TasksListEndpoint(TasksListService tasksListService) {
-        this.tasksListService = tasksListService;
+    public TodoListEndpoint(TodoListService todoListService) {
+        this.todoListService = todoListService;
     }
 
     @ResponseStatus(CREATED)
     @PostMapping
-    public void createNewTasksList(@RequestBody NewTasksListDto newTasksListDto) {
-        tasksListService.createNewTasksList(newTasksListDto);
+    public void createNewTodoList(@RequestBody NewTodoListDto newTodoListDto) {
+        todoListService.createNewTodoList(newTodoListDto);
     }
 
     @ResponseStatus(OK)
     @ResponseBody
     @GetMapping(produces = "application/json")
-    public List<ExistingTasksListDto> getTasksLists() {
-        return tasksListService.getTasksLists();
+    public List<ExistingTodoListsNamesDto> getTodoListsNames() {
+        return todoListService.getTodoListsNames();
     }
 
     @ResponseStatus(CREATED)
     @PostMapping("/{listName}/tasks")
-    public void addTaskToTasksList(@PathVariable String listName, @RequestBody NewTaskDto newTaskDto) {
-        tasksListService.addTaskToTasksList(listName, newTaskDto);
+    public void addTaskToTodoList(@PathVariable String listName, @RequestBody NewTaskDto newTaskDto) {
+        todoListService.addTaskToTodoList(listName, newTaskDto);
     }
 
     @ResponseStatus(OK)
     @GetMapping(value = "/{listName}", produces = "application/json")
-    public TasksListDto getTasksList(@PathVariable String listName) {
-        tasksListService.getTasksList(listName);
-        return tasksListService.getTasksList(listName);
+    public TodoListDto getTodoList(@PathVariable String listName) {
+        return todoListService.getTodoList(listName);
     }
 
 }

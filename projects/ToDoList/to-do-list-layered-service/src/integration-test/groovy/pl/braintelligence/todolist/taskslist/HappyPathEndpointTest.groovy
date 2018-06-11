@@ -2,14 +2,12 @@ package pl.braintelligence.todolist.taskslist
 
 import org.springframework.core.ParameterizedTypeReference
 import pl.braintelligence.todolist.BaseSetupIntegrationTest
-import pl.braintelligence.todolist.application.dto.ExistingTasksListDto
-import pl.braintelligence.todolist.application.dto.TasksListDto
+import pl.braintelligence.todolist.application.dto.ExistingTodoListsNamesDto
+import pl.braintelligence.todolist.application.dto.TodoListDto
 
-import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY
+class HappyPathEndpointTest extends BaseSetupIntegrationTest implements SampleData {
 
-class TasksListHappyPathEndpointTest extends BaseSetupIntegrationTest implements SampleData {
-
-    def "Should create 2 new TasksList AND return it"() {
+    def "Should create 2 new lists AND return all list names"() {
         given:
         def tasksList = [blog_list, serials_to_watch_list]
 
@@ -18,7 +16,7 @@ class TasksListHappyPathEndpointTest extends BaseSetupIntegrationTest implements
         }
 
         when:
-        def response = get("/lists", new ParameterizedTypeReference<List<ExistingTasksListDto>>() {})
+        def response = get("/lists", new ParameterizedTypeReference<List<ExistingTodoListsNamesDto>>() {})
 
         then:
         response.statusCode.is2xxSuccessful()
@@ -39,7 +37,7 @@ class TasksListHappyPathEndpointTest extends BaseSetupIntegrationTest implements
         response.statusCode.is2xxSuccessful()
 
         when:
-        response = get("/lists/$blog_list.name", TasksListDto.class)
+        response = get("/lists/$blog_list.name", TodoListDto.class)
 
         then:
         response.statusCode.is2xxSuccessful()

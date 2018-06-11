@@ -4,7 +4,7 @@ import pl.braintelligence.todolist.BaseSetupIntegrationTest
 
 import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY
 
-class TasksListSadPathEndpointTest extends BaseSetupIntegrationTest implements SampleData {
+class SadPathEndpointTest extends BaseSetupIntegrationTest implements SampleData {
 
     def "Should not create TasksList with the same name"() {
 
@@ -36,7 +36,7 @@ class TasksListSadPathEndpointTest extends BaseSetupIntegrationTest implements S
 
         then:
         response.statusCode.is4xxClientError()
-        response.body.code == 'NON_EXISTENT_TASKS_LIST'
+        response.body.code == 'NON_EXISTENT_LIST'
     }
 
 }

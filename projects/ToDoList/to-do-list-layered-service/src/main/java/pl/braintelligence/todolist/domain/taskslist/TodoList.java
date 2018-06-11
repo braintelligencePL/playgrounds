@@ -8,18 +8,18 @@ import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.EMPTY_LIST
 import static pl.braintelligence.todolist.domain.exceptions.ErrorCode.TOO_LONG_LIST_NAME;
 import static pl.braintelligence.todolist.domain.exceptions.PreCondition.when;
 
-public class TasksList {
+public class TodoList {
 
     private String name;
     private List<Task> tasks;
     private Instant createdAt;
 
-    public TasksList(String name) {
+    public TodoList(String name) {
         validateName(name);
         this.name = name;
     }
 
-    public TasksList(String name, List<Task> tasks, Instant createdAt) {
+    public TodoList(String name, List<Task> tasks, Instant createdAt) {
         validateName(name);
         this.name = name;
         this.tasks = tasks;

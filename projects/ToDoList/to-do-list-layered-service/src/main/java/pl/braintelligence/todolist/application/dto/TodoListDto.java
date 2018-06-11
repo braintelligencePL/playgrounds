@@ -2,7 +2,7 @@ package pl.braintelligence.todolist.application.dto;
 
 import java.util.List;
 
-public class TasksListDto {
+public class TodoListDto {
 
     private String name;
     private List<Task> tasks;
