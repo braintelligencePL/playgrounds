@@ -18,4 +18,4 @@ You will find sample projects that I made for a better understanding of some con
 * `Spock (groovy)` in `/test`
 So far best combination for me :)
 
-also { Domain-Driven-Design, Design-Patterns, MongoDB, Elasticsearch, NodeJS } 
+`also { Domain-Driven-Design, Design-Patterns, MongoDB, Elasticsearch, NodeJS }`
