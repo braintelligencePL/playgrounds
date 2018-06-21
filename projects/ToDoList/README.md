@@ -50,6 +50,7 @@ ONE TO RULE THEM ALL:
 
 
 ## Features
+- [ ] Create branches and divide project into incremental stages 
 - [ ] Mock sample data into DB on start
 - [ ] Task priority and sorting list
 - [ ] Sort by createdAt and priority? 
