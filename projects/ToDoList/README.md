@@ -26,9 +26,9 @@ ONE TO RULE THEM ALL:
 
 # Endpoints:
 
-* [x] Java [ ] Kotlin `POST /lists` - create new List
+* [x] `POST /lists` - create new List
 * [x] `GET /lists` - get all lists-names
-
+ 
 <br>
 
 * [x] `POST /lists/:id/tasks` - add new task to the list
