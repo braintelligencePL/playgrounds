@@ -26,7 +26,7 @@ ONE TO RULE THEM ALL:
 
 # Endpoints:
 
-* [x] `POST /lists` - create new List
+* [x] Java [ ] Kotlin `POST /lists` - create new List
 * [x] `GET /lists` - get all lists-names
 
 <br>
