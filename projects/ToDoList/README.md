@@ -1,6 +1,6 @@
 # TodoList - Project
 
-Checkout my Blog where I write about (basics of Domain-Driven Design)[http://www.braintelligence.pl/the-nature-of-domain-driven-design/]
+Checkout my Blog where I write about [basics of Domain-Driven Design](http://www.braintelligence.pl/the-nature-of-domain-driven-design/)
 
 ## Working with backend application
 
