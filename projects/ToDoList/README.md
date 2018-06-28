@@ -1,7 +1,6 @@
 # TodoList - Project
 
-
-
+Checkout my post about (domain-driven design){http://www.braintelligence.pl/the-nature-of-domain-driven-design/}
 
 ## Working with backend application
 
