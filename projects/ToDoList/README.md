@@ -1,6 +1,6 @@
 # TodoList - Project
 
-Checkout my blog about basics of Domain-Driven Design <BR>
+On my blog you'll find basics of DDD <BR>
 * [The nature of domain-driven design](http://www.braintelligence.pl/the-nature-of-domain-driven-design/) 
 
 ## Working with backend application
