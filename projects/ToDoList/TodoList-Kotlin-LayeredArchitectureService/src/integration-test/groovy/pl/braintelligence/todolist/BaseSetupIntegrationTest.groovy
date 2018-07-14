@@ -49,7 +49,7 @@ class BaseSetupIntegrationTest extends Specification {
     }
 
     protected ResponseEntity post(String uri, Object requestBody) {
-        return sendRequest(uri, HttpMethod.POST, requestBody, Object)
+         return sendRequest(uri, HttpMethod.POST, requestBody, Object)
     }
 
     protected ResponseEntity put(String uri, Object requestBody) {
