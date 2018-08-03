@@ -49,36 +49,11 @@ ONE TO RULE THEM ALL:
 * [ ] `DELETE /lists/:id/tasks/:id` - delete task
 
 
-## Features
+## Other features - todo
 - [ ] Create branches and divide project into incremental stages 
 - [ ] Mock sample data into DB on start
 - [ ] Task priority and sorting list
 - [ ] Sort by createdAt and priority? 
 - [ ] OAuth2 for login/registration
-
-## Additional features
 - [ ] Search all tasks by text ( configure elasticsearch )
 - [ ] Public and private endpoints ( plus useless endpoint that counts users )
-
-## Possible optimizations (future)
-- [ ] Don't return whole object TasksList take just tasks `GET /lists/:id` ---> `GET /lists/:id/tasks`
-
-<br>
-
-## Fixes (to verify)
-`public static Task mapToTask(NewTaskDto newTaskDto)` - probably setting TaskState in mapper is a bad idea
-
-# Implemented in architectures
-
-### To do List - Layered Service (in progress)
-Sample REST service implemented using most popular **Layered Architecture**.
-
-### To do List - Hexagonal Service (soon)
-Sample REST service implemented using **Hexagonal Architecture**. 
-
-### To do List - Frontend (soon)
-Will be implemented in React.js
-
-
-# Refactor todo:
-- [ ] TasksList rename to TodoList
