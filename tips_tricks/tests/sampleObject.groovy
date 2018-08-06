@@ -46,6 +46,7 @@ class PostPublisher extends Specification {
 }
 
 // ------------------ OR TRAIT WAY  -------------- //
+// TRAIT is kinda like inteface but it can default implmentation and state
 trait SampleNewPost {
 
     final Map SAMPLE_NEW_BLOG_POST = [
