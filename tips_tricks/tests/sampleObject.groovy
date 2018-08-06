@@ -1,20 +1,18 @@
-class PostPublisher {
+class SampleNewPostDto {
 
     static final Map SAMPLE_NEW_BLOG_POST = [
-            "id"         : "id-1234",
             "title"      : "Spock Tricks",
             "photo"      : "https://braintelligence.pl/...",
             "content"    : "Lorem ipsum dolor sit....",
             "publishDate": "2018-08-08T00:42:42Z",
             "category"   : ["unit-tests", "integration-tests"],
-            "tags"       : ["tdd", "bdd", "tests"],
+            "tags"       : ["tdd", "bdd", "tests"]
 
     ]
 
-    static NewBlogPostDto sampleNewBlogPost(Map<String, Object> properties = [:]) {
+    static NewBlogPostDto sampleNewPost(Map<String, Object> properties = [:]) {
         properties = SAMPLE_NEW_BLOG_POST + properties
         return new NewBlogPostDto(
-                properties.id,
                 properties.title,
                 properties.photo,
                 properties.content,
@@ -23,4 +21,19 @@ class PostPublisher {
                 properties.tags
         )
     }
+}
+
+class PostPublisher extends Specification {
+    
+    def "Should create new blog post"() {
+        given:
+            NewBlogPostDto newBlogPost = sampleNewPost()
+    }
+    
+    def "Shouldn't create new blog post without title"() {
+        given:
+            NewBlogPostDto newBlogPost = sampleNewPost( title: null )
+    }
+
+    
 }
