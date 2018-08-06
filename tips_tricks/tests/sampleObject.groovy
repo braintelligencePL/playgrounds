@@ -29,19 +29,16 @@ class PostPublisher extends Specification {
         given:
             NewBlogPostDto newBlogPost = sampleNewPost()
         when:
-           ...
-        then: 
-           ...
+        then:
+            
     }
     
     def "Shouldn't create new blog post without title"() {
         given:
             NewBlogPostDto newBlogPost = sampleNewPost( title: null )
         when:
-           ...
         then: 
-           ...
-        
+            
     }
 
     
