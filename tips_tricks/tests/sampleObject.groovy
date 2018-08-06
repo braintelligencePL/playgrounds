@@ -70,6 +70,6 @@ trait SampleNewPost {
     }
 }
 
-class PostPublisher extends Specification implements SampleNewPostDto { ... }
+class PostPublisher extends Specification implements SampleNewPost { ... }
 
 
