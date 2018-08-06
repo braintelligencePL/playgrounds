@@ -1,5 +1,5 @@
 
-// -------------- STATIC WAY -------------- // 
+// -------------- STATIC WAY -------------- //
 class SampleNewPost {
 
     static final Map SAMPLE_NEW_BLOG_POST = [
@@ -25,6 +25,7 @@ class SampleNewPost {
     }
 }
 
+// -------------- Usage example -------------- //
 class PostPublisher extends Specification {
     
     def "Should create new blog post"() {
@@ -44,7 +45,7 @@ class PostPublisher extends Specification {
     }    
 }
 
-// ------------------ OR TRAIT WAY  -------------------- //
+// ------------------ OR TRAIT WAY  -------------- //
 trait SampleNewPost {
 
     final Map SAMPLE_NEW_BLOG_POST = [
@@ -69,7 +70,7 @@ trait SampleNewPost {
         )
     }
 }
-
+// Works the same way
 class PostPublisher extends Specification implements SampleNewPost { ... }
 
 
