@@ -1,4 +1,5 @@
 # TodoList - Project
+[Moved to separated repo with change of concept - project managment not todolist](https://github.com/LukSroczynski/ultimate-project-managment-service)
 
 You can find basics of DDD on my blog <BR>
 * [The nature of domain-driven design](http://www.braintelligence.pl/the-nature-of-domain-driven-design/) 
