@@ -11,6 +11,9 @@ You will find here few sample projects that I made embrace some concepts.
 
 <b>[$ github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
 
+###
+<b>[$ github checkout spock-groovy-tips-tricks »](https://github.com/LukSroczynski/playgrounds/tree/master/tips_tricks/tests)</b>
+
 ## Using:
 
 * Building with `Gradle`
