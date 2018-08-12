@@ -7,11 +7,11 @@ You will find here few sample projects that I made embrace some concepts.
 ### `/jupyter-notebooks` machine-learning & deep-learning section
 <b>[$ github checkout machine-learning](https://github.com/LukSroczynski/playgrounds/tree/master/jupyter-notebooks/machine-learning)</b>
 
-### `/projects` frontend and backend section
+### `/projects` frontend and backend projects
 
-<b>[$ github checkout todolist »](https://github.com/LukSroczynski/playgrounds/tree/master/projects/ToDoList)</b>
+<b>[$ github checkout projects »](https://github.com/LukSroczynski/playgrounds/tree/master/projects)</b>
 
-### `/tips-tricks` - cool constructions that I like
+### `/tips-tricks` - cool constructions that I liked
 <b>[$ github checkout tips-tricks »](https://github.com/LukSroczynski/playgrounds/tree/master/tips_tricks/tests)</b>
 
 ## Using:
@@ -21,4 +21,4 @@ You will find here few sample projects that I made embrace some concepts.
 * `Spock (groovy)` in `/test`
 So far best combination for me :)
 
-`also { Domain-Driven-Design, Design-Patterns, MongoDB, Elasticsearch, NodeJS }`
+also { `Domain-Driven-Design`, `Design-Patterns`, `MongoDB`, `Elasticsearch`, `NodeJS` }
