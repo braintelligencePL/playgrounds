@@ -1,6 +1,6 @@
 # Life, the universe and everything else - Playground
 
-You will find here few sample projects that I made embrace some concepts.
+You will find here few sample projects that I made to embrace some concepts.
 
 ## **What you can find here:**
 
