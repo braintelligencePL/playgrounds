@@ -10,7 +10,8 @@ interface IdExtractor<T, ID> {
     fun getId(entity: T): ID
 }
 
-class InMemoryCrudRepository<ENTITY, ID : Serializable>(idExtractor: IdExtractor<ENTITY, ID>) : CrudRepository<ENTITY, ID> {
+abstract class InMemoryCrudRepository<ENTITY, ID : Serializable>(idExtractor: IdExtractor<ENTITY, ID>) :
+    CrudRepository<ENTITY, ID> {
 
     private val dataStore = ConcurrentHashMap<ID, ENTITY>()
     private val idExtractor: IdExtractor<ENTITY, ID> = requireNonNull<IdExtractor<ENTITY, ID>>(idExtractor)
@@ -26,39 +27,26 @@ class InMemoryCrudRepository<ENTITY, ID : Serializable>(idExtractor: IdExtractor
     }
 
     override fun deleteById(id: ID) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        dataStore.remove(id)
     }
 
     override fun deleteAll(entities: MutableIterable<ENTITY>) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        entities.forEach(Consumer<ENTITY> { this.delete(it) })
     }
 
     override fun deleteAll() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun <S : ENTITY> saveAll(entities: MutableIterable<S>): MutableIterable<S> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        dataStore.clear()
     }
 
     override fun count(): Long {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return dataStore.size.toLong()
     }
 
-    override fun findAllById(ids: MutableIterable<ID>): MutableIterable<ENTITY> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    fun delete(id: ID) {
+        dataStore.remove(id)
     }
 
-    override fun existsById(id: ID): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    fun findOne(id: ID): ENTITY {
+        return dataStore.get(id)!!
     }
-
-    override fun findById(id: ID): Optional<ENTITY> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun delete(entity: ENTITY) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
 }
