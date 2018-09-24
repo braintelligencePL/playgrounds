@@ -14,7 +14,7 @@ You will find here few sample projects that I made to embrace some concepts.
 ### `/tips-tricks` - cool constructions that I liked
 <b>[$ github checkout tips-tricks »](https://github.com/LukSroczynski/playgrounds/tree/master/tips_tricks/tests)</b>
 
-### `/tips-tricks` - cool constructions that I liked
+### `/algo-and-structures` - cool constructions that I liked
 <b>[$ github checkout data-structures-and-algo »](https://github.com/braintelligencePL/playgrounds/tree/master/data_structures_and_algo)</b>
 
 
