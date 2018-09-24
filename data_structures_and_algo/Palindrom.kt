@@ -1,19 +1,20 @@
 fun main(args: Array<String>) {
-    val char = "aaLAaa".toCharArray()
+    val falseWord = "aaLQWAaa"
+    val trueWord = "adeda"
 
-
-    print(istPalindrom(char))
+    println( istPalindrom(falseWord) ) // false
+    println( istPalindrom(trueWord) )  // true
 }
 
-fun istPalindrom(word: CharArray): Boolean {
-    var front = 0
-    var back = word.size - 1
-    while (back > front) {
-        if (word[front] != word[back]) {
+fun istPalindrom(word: String): Boolean {
+    var first = 0
+    var last = word.length - 1
+    while (last > first) {
+        if (word[first] != word[last]) {
             return false
         }
-        front++
-        back--
+        first++
+        last--
     }
     return true
 }
