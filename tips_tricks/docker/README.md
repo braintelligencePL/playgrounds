@@ -1,5 +1,5 @@
 # Run application with Docker
-### Building news-service (backend)
+### Building [news-service](https://github.com/braintelligencePL/news-app) (backend)
 1. Run from command line or IDE (Gradle):
 `gradle clean build docker`
 
