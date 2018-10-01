@@ -27,3 +27,5 @@ You will find here few sample projects that I made to embrace some concepts.
 So far best combination for me :)
 
 also { `Domain-Driven-Design`, `Design-Patterns`, `MongoDB`, `Elasticsearch`, `NodeJS` }
+
+[](/images/layered-architecture.png)
