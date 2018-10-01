@@ -28,4 +28,4 @@ So far best combination for me :)
 
 also { `Domain-Driven-Design`, `Design-Patterns`, `MongoDB`, `Elasticsearch`, `NodeJS` }
 
-[](/images/layered-architecture.png)
+![](/images/layered-architecture.png)
