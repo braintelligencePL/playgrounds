@@ -2,14 +2,13 @@ package pl.braintelligence;
 
 import pl.braintelligence.models.Person;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
@@ -50,7 +49,7 @@ class FlatMapExample {
 
         System.out.println(list);
 
-        Function<List<Integer>, Stream<Integer>> numbers = listOfNumbers -> listOfNumbers.stream();
+        Function<List<Integer>, Stream<Integer>> numbers = Collection::stream;
 //        Function<List<Integer>, Stream<Integer>> numbers = Collection::stream;
 
         list.stream()
@@ -61,56 +60,95 @@ class FlatMapExample {
                 .flatMap(numbers)
                 .forEach(System.out::println); // 1,2,3,4,5,6,7,2,4,6,3,5,7
 
-
     }
 }
-
 
 class ReductionExample {
     public static void main(String[] args) {
 
         List<Person> persons = Arrays.asList(
 //                new Person("Jack", 44),
-//                new Person("Jack", 22),
-//                new Person("Jack", 11),
+                new Person("Jack", 22),
+                new Person("Jack", 13),
                 new Person("Jack", 5),
-                new Person("Mike", 2)
+                new Person("Mike", 2),
+                new Person("Mike", 12)
         );
 
-        Optional<Integer> minAge = persons.stream()
-                .map(Person::getAge)
-                .filter(age -> age > 10)
-                .min(Comparator.naturalOrder());
+        Optional<Person> personMaxAge = persons.stream()
+                .max(Comparator.comparing(Person::getAge));
 
-        if(minAge.isPresent()){
-            minAge.get();
-        }
+        System.out.println(personMaxAge);
 
 
+//        Optional<Integer> minAge = persons.stream()
+//                .map(Person::getAge)
+//                .filter(age -> age > 10)
+//                .min(Comparator.naturalOrder());
+//
+//        if (minAge.isPresent()) {
+//            minAge.get();
+//        }
+//
+////        System.out.println(minAge.orElse(1));
+//
+//        Map<Integer, List<String>> result = persons.stream()
+//                .filter(person -> person.getAge() > 10)
+//                .collect(
+//                        Collectors.groupingBy(
+//                                Person::getAge,
+//                                Collectors.mapping(
+//                                        Person::getName,
+//                                        Collectors.toList()
+//                                )
+//                        )
+//                );
+//
+////        System.out.println("result" + result);
+//
+////        ArrayList<?> box = new ArrayList<String>();
+////        box.add(null);
+////        box.add("saa");
+//
+//        Film film = title -> "Watching " + title;
+//
+////        System.out.println(film.watch("Rick and Morty")); // Watching Rick and Morty
+//
 
-        System.out.println(minAge.orElse(1));
+
+        var tools = Arrays.asList("Hammer", "Nokia 3030");
+
+        var streamOfTools = tools.stream();
+
+        tools.stream()
+                .peek(System.out::println)
+                .collect(Collectors.joining(", "));
 
     }
+
 }
 
+interface Film {
 
+    String watch(String str);
 
+    default String defaultPreview(String str) { }
+    static String staticPreview(String str) { }
+}
 
+class FilmImpl implements Film {
 
+    @Override
+    public String watch(String str) {
+        return "Rick and Morty";
+    }
 
+    private void performAction() {
+        // First way
+        Film.staticPreview("Rick and Morty");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // Second way
+        FilmImpl film = new FilmImpl();
+        film.defaultPreview("Rick and Morty");
+    }
+}
