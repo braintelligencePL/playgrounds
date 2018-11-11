@@ -120,6 +120,9 @@ class ReductionExample {
 
         var streamOfTools = tools.stream();
 
+        var ss = "2" + 234;
+        System.out.println(ss);
+
         tools.stream()
                 .peek(System.out::println)
                 .collect(Collectors.joining(", "));
@@ -132,8 +135,13 @@ interface Film {
 
     String watch(String str);
 
-    default String defaultPreview(String str) { }
-    static String staticPreview(String str) { }
+    default String defaultPreview(String str) {
+        return null;
+    }
+
+    static String staticPreview(String str) {
+        return null;
+    }
 }
 
 class FilmImpl implements Film {
