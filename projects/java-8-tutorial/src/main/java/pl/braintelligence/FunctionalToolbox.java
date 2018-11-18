@@ -10,23 +10,40 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+
 /**
- *  Category 1
- *  Consumer Section
+ * Category 1
+ * Consumer Section
  */
 class ConsumerSection {
     public static void main(String[] args) {
-        Consumer<String> consumer1 = s -> System.out.println(s);
-        Consumer<String> consumer2 = System.out::println;
 
-        consumer1.accept("consumer1 ");
-        consumer2.accept("consumer2 ");
-
-        // More practical sample of consumer
         List<Person> persons = Arrays.asList(
                 new Person("Consumer: Jack"),
                 new Person("Consumer: Mike")
         );
+
+        var result = new ArrayList<>();
+
+        Consumer<Person> adding = result::add;
+        Consumer<Person> printing = System.out::println;
+
+        persons.stream()
+                .forEach(adding.andThen(printing));
+
+        System.out.println(result + "asd");
+
+//        consumer1.accept("consumer1 ");
+//        consumer2.accept("consumer2 ");
+
+        // More practical sample of consumer
+//        List<Person> persons = Arrays.asList(
+//                new Person("Consumer: Jack"),
+//                new Person("Consumer: Mike")
+//        );
+
+//        persons.stream()
+//                .forEach();
 
         persons.forEach(person ->
                 System.out.println(person.getName())
@@ -35,7 +52,9 @@ class ConsumerSection {
         // We want this syntax :: System.out::println
         persons.stream()
                 .map(Person::getName) // To get the same result we need to map it so we get names instead of Person object
+                .distinct()
                 .forEach(System.out::println);
+
 
         // First we want to print persons List
         // Second we want to add content of the `famousPeople` list to new List called `trulyFamousPeople`
@@ -51,6 +70,14 @@ class ConsumerSection {
 
         Consumer<Person> chainedConsumer = printingConsumer.andThen(addingConsumer);
 
+        Consumer<Person> print = System.out::println;
+
+        famousPeople.stream()
+                .forEach(element -> {
+                    System.out.println(element);
+
+                });
+
         famousPeople.forEach(chainedConsumer);
 
 //        famousPeople.forEach(printingConsumer.andThen(addingConsumer)); // We can chain Consumers
@@ -61,8 +88,8 @@ class ConsumerSection {
 }
 
 /**
- *  Category 2
- *  Comparator Section
+ * Category 2
+ * Comparator Section
  */
 class ComparatorSection {
     public static void main(String[] args) {
@@ -82,8 +109,8 @@ class ComparatorSection {
 }
 
 /**
- *  Category 3
- *  Predicate Section
+ * Category 3
+ * Predicate Section
  */
 class PredicateSection {
     public static void main(String[] args) {
