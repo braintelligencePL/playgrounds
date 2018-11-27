@@ -28,7 +28,7 @@ a 3-byte counter, starting with a random value.
 
 <br> 
 
-- `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` - just one document
+- `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` - one doc that match query 
 - `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` - all that match first query {}
 
 <br>
