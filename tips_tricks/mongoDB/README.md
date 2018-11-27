@@ -28,9 +28,9 @@ a 3-byte counter, starting with a random value.
 <br> 
 
 - `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {qwerty: "value"}})`  <br>
-update by name and $set new field qwerty. <br>
 { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 } <br>
-- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})`
-
+update by name and $set new field qwerty. <br>
+- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {status: "to_do"}})` - just one document - first 
+- `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` - all that match first query {}
 
 
