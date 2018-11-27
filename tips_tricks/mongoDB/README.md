@@ -23,6 +23,10 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
+- `db.COLLECTION.find({name: "Jack"})` -  find by field.
+
+<br>
+
 - `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 - `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])`
 
