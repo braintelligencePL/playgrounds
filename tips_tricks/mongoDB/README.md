@@ -15,8 +15,15 @@ a 3-byte counter, starting with a random value.
 ## MongoShell Commands: 
 - `show dbs` - your databases.
 - `use NEW_OR_NOT_DB` - creates or switches to DB.
-
+<br>
 - `db.COLLECTION.find()` - returns all entries.
 - `db.COLLECTION.find().pretty()` - returns all entries well formatted.
+<br>
+- `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+- 
 
-
+> db.flightData.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})
+{ "acknowledged" : true, "matchedCount" : 0, "modifiedCount" : 0 }
+> db.flightData.updateOne({name: "jacc"}, {$set: {xd: "asd"}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> 
