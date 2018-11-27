@@ -31,8 +31,10 @@ mongo -u "foouser" -p "foopwd" YOURHOSTIP --authenticationDatabase "admin"
 
 If hosted on Azure set the docker host keep alive timeout to less than 240 seconds
 that is the default keep alive time on Azure network infrastructure (Public Ip only)
+
 See also
-https://docs.mongodb.org/ecosystem/platforms/windows-azure/
-http://stackoverflow.com/questions/34373003/connection-timeout-to-mongodb-on-azure-vm
+* https://docs.mongodb.org/ecosystem/platforms/windows-azure/
+* http://stackoverflow.com/questions/34373003/connection-timeout-to-mongodb-on-azure-vm
+
 Source:
-https://gist.githubusercontent.com/davideicardi/f2094c4c3f3e00fbd490/raw/d99b467e09a9c3c0b02fd04e8d1e1782865037b3/mongo-docker.bash
+* https://gist.githubusercontent.com/davideicardi/f2094c4c3f3e00fbd490/raw/d99b467e09a9c3c0b02fd04e8d1e1782865037b3/mongo-docker.bash
