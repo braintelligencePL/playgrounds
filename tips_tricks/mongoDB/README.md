@@ -1,4 +1,4 @@
-First checkout [docker-mongo](./Running_mongo_docker) to run your local docker with mongo instance. <br> 
+First checkout [docker-mongo](./docker-mongo.md) to run your local docker with mongo instance. <br> 
 Second download [Mongo Compass](https://www.mongodb.com/products/compass) for browsing databases/documents. <br>
 
 ## Few informations
