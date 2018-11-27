@@ -2,7 +2,7 @@ First checkout [docker-mongo](./Running_mongo_docker) to run your local docker.
 
 
 ## Few informations
-`"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - unique id [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification)
+`"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification)
 ```
 a 4-byte value representing the seconds since the Unix epoch,
 a 5-byte random value, and
