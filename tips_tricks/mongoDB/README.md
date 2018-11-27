@@ -25,10 +25,11 @@ a 3-byte counter, starting with a random value.
 
 - `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
-<br>
+<br> 
 
-> db.flightData.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})
-{ "acknowledged" : true, "matchedCount" : 0, "modifiedCount" : 0 }
-> db.flightData.updateOne({name: "jacc"}, {$set: {xd: "asd"}})
+- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})`
 { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
-> 
+- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})`
+
+
+
