@@ -1,4 +1,4 @@
-### First checkout Running_Local_Mongo.md to run your local docker. 
+#### First checkout [] to run your local docker. 
 
 
 ## Few informations
@@ -8,14 +8,15 @@ a 4-byte value representing the seconds since the Unix epoch,
 a 5-byte random value, and
 a 3-byte counter, starting with a random value.
 ```
-
-
-
 `mongod` - is the primary daemon process for the MongoDB system
 
+## Interesting stuff
+
+## MongoShell Commands: 
+- `show dbs` - your databases.
+- `use NEW_OR_NOT_DB` - creates or switches to DB.
+
+- `db.COLLECTION.find()` - returns all entries.
+- `db.COLLECTION.find().pretty()` - returns all entries well formatted.
 
 
-
-MongoShell Commands: 
-- `show dbs` - your databases
-- `use YOUR_NEW_DB` - creates or switches to DB
