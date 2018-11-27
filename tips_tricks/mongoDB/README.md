@@ -27,7 +27,7 @@ a 3-byte counter, starting with a random value.
 
 <br> 
 
-- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})`
+- `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {qwerty: "value"}})` - update by name and $set new field qwerty. <br>
 { "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
 - `db.COLLECTION.updateOne({name: "jaccc"}, {$set: {xd: "asd"}})`
 
