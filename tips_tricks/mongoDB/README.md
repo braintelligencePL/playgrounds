@@ -2,7 +2,8 @@
 1. Checkout [docker-mongo](./docker-mongo.md) to run your local docker with mongo instance. <br> 
 2. Download [Mongo Compass](https://www.mongodb.com/products/compass) for browsing databases/documents. <br>
 3. Download [Robo 3T (formerly Robomongo)](https://robomongo.org/) with embedded mongo shell. <br>
-I use interchangeable RoboMongo and MongoCompass. 
+
+(I use Compass and Robo interchangeable. I find use for both of them.)
 
 ## Few informations
 `"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification)
