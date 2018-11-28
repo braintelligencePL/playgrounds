@@ -3,8 +3,6 @@
 2. Download [Mongo Compass](https://www.mongodb.com/products/compass) for browsing databases/documents. <br>
 3. Download [Robo 3T (formerly Robomongo)](https://robomongo.org/) with embedded mongo shell. <br>
 
-`I use interchangeable Compass and Robo.`
-
 <br>
 
 ## Few informations
