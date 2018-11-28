@@ -3,7 +3,7 @@
 2. Download [Mongo Compass](https://www.mongodb.com/products/compass) for browsing databases/documents. <br>
 3. Download [Robo 3T (formerly Robomongo)](https://robomongo.org/) with embedded mongo shell. <br>
 
-`I use Compass and Robo interchangeable.`
+`I use interchangeable Compass and Robo.`
 
 ## Few informations
 `"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification)
