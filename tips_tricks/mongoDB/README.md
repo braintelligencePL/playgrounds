@@ -53,13 +53,17 @@ Similar to above, but inserts many objects
 
 <br> 
 
-- `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` - one doc that match query 
-- `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` - all that match first query {}
-- `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` - similar to updateMany, but overrides all the values, so now object has only one field delay.
-
+- `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` <br>
+One doc that match query 
+- `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` <br>
+All that match first query {}
+- `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <br> 
+Similar to updateMany, but OVERRIDES all the values, so now object has only one field delay.
 
 <br>
 
-- `db.COLLECTION.deleteMany({status: "to_delete"})` - delete with query
-- `db.COLLECTION.deleteMany({})` - delete all documents
+- `db.COLLECTION.deleteMany({status: "to_delete"})` <br> 
+Delete with query
+- `db.COLLECTION.deleteMany({})` <br> 
+Delete all documents
 
