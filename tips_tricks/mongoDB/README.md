@@ -31,7 +31,8 @@ a 3-byte counter, starting with a random value.
 <br>
 
 - `db.COLLECTION.find({name: "Jack"})` -  find by field.
-- `db.COLLECTION.find({distance: {$gt: 10}})` distance is greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
+- `db.COLLECTION.find({distance: {$gt: 10}})` find all distances that are greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
+- `db.COLLECTION.findOne({distance: {$gt: 10}})` - find one distance.
 
 <br>
 
