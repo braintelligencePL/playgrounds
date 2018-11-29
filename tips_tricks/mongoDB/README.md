@@ -59,6 +59,9 @@ a 3-byte counter, starting with a random value.
 📜 All that match first query {}
 - `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <br> 
 📜 Similar to updateMany, but OVERRIDES all the values, so now object has only one field delay.
+- `db.COLLECTION.replaceOne({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: 123})` <br>
+Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
+
 
 <br>
 
