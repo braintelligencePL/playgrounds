@@ -43,6 +43,8 @@ a 3-byte counter, starting with a random value.
 
 - `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` - one doc that match query 
 - `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` - all that match first query {}
+- `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` - similar to updateMany, but overrides all the values, so now object has only one field delay.
+
 
 <br>
 
