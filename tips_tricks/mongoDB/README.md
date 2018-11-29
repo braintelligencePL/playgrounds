@@ -31,6 +31,7 @@ a 3-byte counter, starting with a random value.
 <br>
 
 - `db.COLLECTION.find({name: "Jack"})` -  find by field.
+- `db.COLLECTION.find({distance: {$gt: 10}})` distance is greater than 10.
 
 <br>
 
