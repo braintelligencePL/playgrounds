@@ -20,7 +20,9 @@ a 3-byte counter, starting with a random value.
 <br>
 
 ## MongoShell Commands: 
-- `show dbs` - your databases.
+- `show dbs` <br>
+Your databases
+
 - `use CREATE_NEW_OR_USE_EXISTING_DB` - creates or switches to DB.
 
 <br>
