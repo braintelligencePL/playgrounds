@@ -37,33 +37,33 @@ a 3-byte counter, starting with a random value.
 <br>
 
 - `db.COLLECTION.find({name: "Jack"})` <br> 
-Find by field.
+📜 Find by field.
 - `db.COLLECTION.find({distance: {$gt: 10}})`  <br>
-Find all distances that are greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
+📜 Find all distances that are greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
 - `db.COLLECTION.findOne({distance: {$gt: 10}})` <br>
-Find one distance.
+📜 Find one distance.
 
 <br>
 
 - `db.COLLECTION.insertOne({name :"Jack"})` <br>
-Inserts one object, key (name) is translated to String [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+📜 Inserts one object, key (name) is translated to String [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
 
 - `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])` <br>
-Similar to above, but inserts many objects
+📜 Similar to above, but inserts many objects
 
 <br> 
 
 - `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` <br>
-One doc that match query 
+📜 One doc that match query 
 - `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` <br>
-All that match first query {}
+📜 All that match first query {}
 - `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <br> 
-Similar to updateMany, but OVERRIDES all the values, so now object has only one field delay.
+📜 Similar to updateMany, but OVERRIDES all the values, so now object has only one field delay.
 
 <br>
 
 - `db.COLLECTION.deleteMany({status: "to_delete"})` <br> 
-Delete with query
+📜 Delete with query
 - `db.COLLECTION.deleteMany({})` <br> 
-Delete all documents
+📜 Delete all documents
 
