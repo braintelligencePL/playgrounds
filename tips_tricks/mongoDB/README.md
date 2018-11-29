@@ -1,7 +1,7 @@
 ## Prerequisites
 1. Checkout [docker-mongo](./docker-mongo.md) to run your local docker with mongo instance. <br> 
 2. Download [Mongo Compass](https://www.mongodb.com/products/compass) for browsing databases/documents. <br>
-3. Download [Robo 3T (formerly Robomongo)](https://robomongo.org/) with embedded mongo shell. <br>
+3. Download [Robo 3T (formerly Robomongo)](https://robomongo.org/) for embedded mongo shell. <br>
 
 <br>
 
