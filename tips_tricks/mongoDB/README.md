@@ -26,6 +26,8 @@ Your databases
 - `use CREATE_NEW_OR_USE_EXISTING_DB` <br>
 Creates or switches to DB.
 
+<br>
+
 - `db.COLLECTION.find()` <br>
 Returns all entries.
 
@@ -34,14 +36,20 @@ Returns all entries well formatted.
 
 <br>
 
-- `db.COLLECTION.find({name: "Jack"})` -  find by field.
-- `db.COLLECTION.find({distance: {$gt: 10}})` find all distances that are greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
-- `db.COLLECTION.findOne({distance: {$gt: 10}})` - find one distance.
+- `db.COLLECTION.find({name: "Jack"})` <br> 
+Find by field.
+- `db.COLLECTION.find({distance: {$gt: 10}})`  <br>
+Find all distances that are greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
+- `db.COLLECTION.findOne({distance: {$gt: 10}})` <br>
+Find one distance.
 
 <br>
 
-- `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
-- `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])` 
+- `db.COLLECTION.insertOne({name :"Jack"})` <br>
+Inserts one object, key (name) is translated to String [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+
+- `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])` <br>
+Similar to above, but inserts many objects
 
 <br> 
 
