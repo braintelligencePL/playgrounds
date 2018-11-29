@@ -31,12 +31,12 @@ a 3-byte counter, starting with a random value.
 <br>
 
 - `db.COLLECTION.find({name: "Jack"})` -  find by field.
-- `db.COLLECTION.find({distance: {$gt: 10}})` distance is greater than 10.
+- `db.COLLECTION.find({distance: {$gt: 10}})` distance is greater than 10. [docs $gt](https://docs.mongodb.com/manual/reference/operator/query/gt/)
 
 <br>
 
-- `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs](https://docs.mongodb.com/manual/tutorial/insert-documents/)
-- `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])`
+- `db.COLLECTION.insertOne({name :"Jack"})` - inserts (key is translated to String) [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
+- `db.COLLECTION.insertMany([{name :"Jack"}, {name: 'Jack'}])` 
 
 <br> 
 
