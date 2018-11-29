@@ -23,12 +23,14 @@ a 3-byte counter, starting with a random value.
 - `show dbs` <br>
 Your databases
 
-- `use CREATE_NEW_OR_USE_EXISTING_DB` - creates or switches to DB.
+- `use CREATE_NEW_OR_USE_EXISTING_DB` <br>
+Creates or switches to DB.
 
-<br>
+- `db.COLLECTION.find()` <br>
+Returns all entries.
 
-- `db.COLLECTION.find()` - returns all entries.
-- `db.COLLECTION.find().pretty()` - returns all entries well formatted.
+- `db.COLLECTION.find().pretty()` <br> 
+Returns all entries well formatted.
 
 <br>
 
