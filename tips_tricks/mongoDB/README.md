@@ -21,18 +21,18 @@ a 3-byte counter, starting with a random value.
 
 ## MongoShell Commands: 
 - `show dbs` <br>
-Your databases
+📜 Your databases
 
 - `use CREATE_NEW_OR_USE_EXISTING_DB` <br>
-Creates or switches to DB.
+📜 Creates or switches to DB.
 
 <br>
 
 - `db.COLLECTION.find()` <br>
-Returns all entries.
+📜 Returns all entries.
 
 - `db.COLLECTION.find().pretty()` <br> 
-Returns all entries well formatted.
+📜 Returns all entries well formatted.
 
 <br>
 
