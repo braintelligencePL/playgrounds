@@ -103,10 +103,10 @@ a 3-byte counter, starting with a random value.
 📜 Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
 
 <br>
-`db.getCollection('COLLECTION').updateMany({}, {$set: {status123: {stat: "WAITING"}}})` <= Embedded Document
+`db.getCollection('COLLECTION').updateMany({}, {$set: {status123: {stat: "WAITING"}}})` <= Embedded Document <br>
 📜 Document inside of document <br>
-![Embedded document - mongoDB](images/mongo-embedded-document.png?raw=true)
 
+![Embedded document - mongoDB](images/mongo-embedded-document.png?raw=true)
 
 # Delete
 
