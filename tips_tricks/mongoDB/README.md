@@ -38,7 +38,7 @@ a 3-byte counter, starting with a random value.
 <br>
 <br>
 
-## MongoShell Commands: 
+# MongoShell Commands: 
 - `show dbs` <br>
 📜 Your databases
 
@@ -47,7 +47,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-## Find
+# Find
 
 ### Just find 
 - `db.COLLECTION.find()` <br>
@@ -68,7 +68,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-## Insert
+# Insert
 
 - `db.COLLECTION.insertOne({name :"Jack"})` <br>
 📜 Inserts one object, key (name) is translated to String [docs insert](https://docs.mongodb.com/manual/tutorial/insert-documents/)
@@ -78,7 +78,7 @@ a 3-byte counter, starting with a random value.
 
 <br> 
 
-## Update
+# Update
 
 - `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` <br>
 📜 One doc that match query 
@@ -92,7 +92,7 @@ Does the same thing that update does, but it is more descriptive, explicit. OVER
 
 <br>
 
-## Delete
+# Delete
 
 - `db.COLLECTION.deleteMany({status: "to_delete"})` <br> 
 📜 Delete with query
