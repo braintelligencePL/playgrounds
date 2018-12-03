@@ -99,7 +99,7 @@ Does the same thing that update does, but it is more descriptive, explicit. OVER
 - `db.COLLECTION.deleteMany({})` <br> 
 📜 Delete all documents
 
-## Other interesting commands
+## Other interesting things
 `db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
 📜 find() returns cursor you simply can't display all the data so you have a cursor.
 
