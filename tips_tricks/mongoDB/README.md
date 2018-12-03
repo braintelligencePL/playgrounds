@@ -96,7 +96,7 @@ a 3-byte counter, starting with a random value.
 - `db.COLLECTION.update({_id: ObjectId("1234")}, {delay: true})` <= AVOID USING <br> 
 📜 Similar to updateMany, but OVERRIDES all the values, so now object has only one field (delay).
 - `db.COLLECTION.replaceOne({_id: ObjectId("1234")}, {delay: true})` <= USE THIS INSTEAD <br>
-Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
+📜 Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
 
 
 <br>
@@ -109,7 +109,7 @@ Does the same thing that update does, but it is more descriptive, explicit. OVER
 📜 Delete all documents
 
 ## Other interesting things
-`db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
+- `db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
 📜 find() returns cursor you simply can't display all the data so you have a cursor.
 
 
