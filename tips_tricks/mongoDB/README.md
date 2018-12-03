@@ -6,13 +6,13 @@
 <br>
 
 ```
-root@ $ docker pull mongo
-root@ $ docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
-root@ $ docker exec -i -t YOURCONTAINERNAME bash
-root@ $ mongo
+root$ docker pull mongo
+root$ docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
+root$ docker exec -i -t YOURCONTAINERNAME bash
+root$ mongo
 
-mongo-shell@ $ use admin
-mongo-shell@ $ db.createUser({user:"user",pwd:"1234",roles:[{role:"root",db:"admin"}]})
+mongo-shell$ use admin
+mongo-shell$ db.createUser({user:"user",pwd:"1234",roles:[{role:"root",db:"admin"}]})
 ```
 
 <br>
