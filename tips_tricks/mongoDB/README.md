@@ -104,7 +104,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 `db.getCollection('COLLECTION').updateMany({}, {$set: {status123: {stat: "WAITING"}}})` <= Embedded Document
-📜 Document inside of document
+📜 Document inside of document <br>
 ![](Screenshot from 2018-12-03 14-42-33.png)
 
 
