@@ -71,9 +71,9 @@ a 3-byte counter, starting with a random value.
 ### Find - specify fields to return (bandwidth is less busy that way) - PROJECTION
 - `db.COLLECTION.find({}, {name: 1})` <br>
 📜 first argument: {} find all. <br>
-📜 second argument: Return return onlu name field (plus mongo _id) <br> 
+📜 second argument: Return return onlu name field (plus mongo `_id`) <br> 
 - `db.COLLECTION.find({}, {name: 1, _id: 0})` <br>
-📜 without mongo _id 
+📜 without mongo `_id` 
 
 <br>
 
