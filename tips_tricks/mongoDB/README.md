@@ -31,7 +31,11 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-`mongod` - is the primary daemon process for the MongoDB system
+`mongod` - is the primary daemon process for the MongoDB system.
+
+<br>
+
+
 
 ## Interesting stuff
 
@@ -98,8 +102,11 @@ a 3-byte counter, starting with a random value.
 - `db.COLLECTION.replaceOne({_id: ObjectId("1234")}, {delay: true})` <= USE THIS INSTEAD <br>
 📜 Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
 
-
 <br>
+`db.getCollection('COLLECTION').updateMany({}, {$set: {status123: {stat: "WAITING"}}})` <= Embedded Document
+📜 Document inside of document
+
+
 
 # Delete
 
