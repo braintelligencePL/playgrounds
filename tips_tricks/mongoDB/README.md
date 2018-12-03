@@ -105,7 +105,7 @@ a 3-byte counter, starting with a random value.
 <br>
 `db.getCollection('COLLECTION').updateMany({}, {$set: {status123: {stat: "WAITING"}}})` <= Embedded Document
 📜 Document inside of document <br>
-![Embedded document - mongoDB](./images/mongo-embedded-document.png)
+![Embedded document - mongoDB](images/mongo-embedded-document.png?raw=true)
 
 
 # Delete
