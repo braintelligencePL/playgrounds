@@ -100,8 +100,8 @@ Does the same thing that update does, but it is more descriptive, explicit. OVER
 📜 Delete all documents
 
 ## Other interesting commands
-`db.COLLECTION.find().forEach( (pass) => {printjson(pass)})`
-find() returns cursor you simply can't display all the data so you have a cursor. Above code is using cursor to display all records.
+`db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
+📜 find() returns cursor you simply can't display all the data so you have a cursor. Above code is using cursor to display all records.
 
 
 
