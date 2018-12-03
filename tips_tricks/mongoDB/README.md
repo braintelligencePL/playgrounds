@@ -6,7 +6,7 @@
 <br>
 
 ```
-# cd.1 
+### cd.1 ###
 root$ docker pull mongo
 root$ docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
 root$ docker exec -i -t YOURCONTAINERNAME bash
