@@ -69,14 +69,13 @@ a 3-byte counter, starting with a random value.
 <br>
 
 ### Find with filter (your bandwidth is less busy) - it is called PROJECTION
-- `db.COLLECTION.find({}, {name: 1})` 
+- `db.COLLECTION.find({}, {name: 1})` <br>
 📜 first argument: {} find all. <br>
 📜 second argument: Return return onlu name field (plus mongo _id) <br> 
-- `db.COLLECTION.find({}, {name: 1, _id: 0})`
-📜 without mongo _id
+- `db.COLLECTION.find({}, {name: 1, _id: 0})` <br>
+📜 without mongo _id 
 
-
-
+<br>
 
 # Insert
 
