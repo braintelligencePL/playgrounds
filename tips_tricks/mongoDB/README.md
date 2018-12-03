@@ -93,9 +93,9 @@ a 3-byte counter, starting with a random value.
 📜 One doc that match query 
 - `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` <br>
 📜 All that match first query {}
-- `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` AVOID USING <br> 
+- `db.COLLECTION.update({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <= AVOID USING <br> 
 📜 Similar to updateMany, but OVERRIDES all the values, so now object has only one field (delay).
-- `db.COLLECTION.replaceOne({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <br>
+- `db.COLLECTION.replaceOne({_id: ObjectId("5bfd36633c5800238dbfaaf2")}, {delay: true})` <= USE THIS INSTEAD <br>
 Does the same thing that update does, but it is more descriptive, explicit. OVERRIDES all values.
 
 
