@@ -58,7 +58,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-### Find with queries
+### Find 'something' 
 - `db.COLLECTION.find({name: "Jack"})` <br> 
 📜 Find by field.
 - `db.COLLECTION.find({distance: {$gt: 10}})`  <br>
