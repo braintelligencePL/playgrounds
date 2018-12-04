@@ -93,10 +93,15 @@ a 3-byte counter, starting with a random value.
 
 # Update
 
+### Just update
 - `db.COLLECTION.updateOne({name: "qwer"}, {$set: {status: "to_do"}})` <br>
 📜 One doc that match query 
 - `db.COLLECTION.updateMany({}, {$set: {status: "to_delete"}})` <br>
 📜 All that match first query {}
+
+<br>
+
+### Update with override
 - `db.COLLECTION.update({_id: ObjectId("1234")}, {delay: true})` <= AVOID USING <br> 
 📜 Similar to updateMany, but OVERRIDES all the values, so now object has only one field (delay).
 - `db.COLLECTION.replaceOne({_id: ObjectId("1234")}, {delay: true})` <= USE THIS INSTEAD <br>
