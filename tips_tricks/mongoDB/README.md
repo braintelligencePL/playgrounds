@@ -5,7 +5,7 @@
 
 <br>
 
-```bash
+```
 # Docker with mongo
 your-pc-root $  docker pull mongo
 your-pc-root $  docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
