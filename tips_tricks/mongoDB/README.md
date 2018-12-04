@@ -115,6 +115,8 @@ a 3-byte counter, starting with a random value.
 - `db.getCollection('COLLECTION').updateMany({}, {$set: {hobbies: ['111','222']}})` <br>
 📜 It is not a document, but a list of Strings
 
+<br>
+
 
 # Delete
 
