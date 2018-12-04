@@ -7,9 +7,9 @@
 
 ```
 # Docker with mongo
-your-pc-root $  docker pull mongo
-your-pc-root $  docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
-your-pc-root $  docker exec -i -t YOURCONTAINERNAME bash
+your-pc-root $ docker pull mongo
+your-pc-root $ docker run --name YOURCONTAINERNAME --restart=always -d -p 27017:27017 mongo mongod --auth
+your-pc-root $ docker exec -i -t YOURCONTAINERNAME bash
 
 docker-root $  mongo
 
