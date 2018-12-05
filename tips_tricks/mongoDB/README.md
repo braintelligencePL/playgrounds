@@ -133,7 +133,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-`Hard Limit` - mongo document may have 16mb including embedded documents. Additionaly you can have 100 levels of embedded documents.
+`Hard Limit` - mongo document may have 16mb including embedded documents. Additionaly you can have 100 levels of embedded documents. For files beyond 16mb checkout [GridFS](https://docs.mongodb.com/manual/core/gridfs/).
 
 <br>
 
