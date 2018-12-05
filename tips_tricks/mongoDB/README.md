@@ -137,8 +137,15 @@ a 3-byte counter, starting with a random value.
 - Boolean
 - Number - Integer (int32), NumberLong (int64), NumberDecimal
 - ObjectId
-- ISODate - ISODate("2011-11-11")
-- Timestamp
+- ISODate - ISODate("2011-11-11") and Timestamp
+```
+db.getCollection('COLLECTION').insertOne({dd: new Date(), tt: Timestamp()})
+{
+    "_id" : ObjectId("5c07c8d3f1c85be228e60406"),
+    "dd" : ISODate("2018-12-05T12:47:15.825Z"),
+    "tt" : Timestamp(1544014035, 1)
+}
+```
 - Embedded Documents - `{person: {...}}`
 - Arrays - `{names: [...]}`
 
