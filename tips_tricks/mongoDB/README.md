@@ -56,10 +56,10 @@ a 3-byte counter, starting with a random value.
 
 ### Just find 
 - `db.COLLECTION.find()` <br>
-📜 Returns all entries.
+📜 Returns cursor to entries. Kind of, similar to paging.
 
 - `db.COLLECTION.find().pretty()` <br> 
-📜 Returns all entries well formatted.
+📜 Returns cursor to entries - well formatted.
 
 <br>
 
