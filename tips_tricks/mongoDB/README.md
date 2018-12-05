@@ -96,11 +96,11 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 
 ### Working with Arrays
 - `db.getCollection('COLLECTION').updateMany({}, {$set: {hobbies: ['111','222']}})` <br>
+- `db.getCollection('COLLECTION').insertOne({hobbies: ['111','222']})` <br>
 📜 It is not a document, but a list of Strings
 ![Embedded document - mongoDB](images/array-example1.png?raw=true)
 
 <br>
-
 
 # Delete
 
