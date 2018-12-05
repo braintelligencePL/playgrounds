@@ -143,7 +143,11 @@ a 3-byte counter, starting with a random value.
 ```
 NumberInt creates a int32 value => NumberInt(55)
 NumberLong creates a int64 value => NumberLong(7489729384792)
-If you just use a number (e.g. insertOne({a: 1}), this will get added as a normal double into the database. The reason for this is that the shell is based on JS which only knows float/ double values and doesn't differ between integers and floats.
+
+If you just use a number  insertOne({a: 1}
+This will get added as a normal double into the database.
+
+The reason for this is that the shell is based on JS which only knows float/ double values.
 ```
 - ObjectId
 - ISODate - ISODate("2011-11-11") and Timestamp
