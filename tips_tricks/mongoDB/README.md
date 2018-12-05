@@ -114,7 +114,7 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 ### Interesting commands
 
 - `db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
-📜 find() returns cursor you simply can't display all the data but you can do forEach and display data that way.
+📜 find() returns cursor you simply can't display all the data but you can bypass that with forEach and display all the data.
 
 <br>
 
