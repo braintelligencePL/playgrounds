@@ -19,35 +19,6 @@ mongo-shell $  db.createUser({user:"user",pwd:"1234",roles:[{role:"root",db:"adm
 
 <br>
 
-## Few informations
-
-<br>
-
-`"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification).
-```
-a 4-byte value representing the seconds since the Unix epoch,
-a 5-byte random value, and
-a 3-byte counter, starting with a random value.
-```
-
-<br>
-
-`mongod` - is the primary daemon process for the MongoDB system.
-
-<br>
-
-### Data Types
-- Text, String
-- Boolean
-- Number - Integer (int32), NumberLong (int64), NumberDecimal
-- ObjectId
-- ISODate - ISODate("2011-11-11")
-- Timestamp
-- Embedded Documents - `{person: {...}}`
-- Arrays - `{names: [...]}`
-
-<br>
-
 # MongoShell Commands: 
 - `show dbs` <br>
 📜 Your databases
@@ -137,9 +108,37 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 - `db.COLLECTION.deleteMany({})` <br> 
 📜 Delete all documents
 
+# Few informations
+
 ## Other interesting things
+
 - `db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
 📜 find() returns cursor you simply can't display all the data so you have a cursor.
 
+<br>
 
+`"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification).
+```
+a 4-byte value representing the seconds since the Unix epoch,
+a 5-byte random value, and
+a 3-byte counter, starting with a random value.
+```
+
+<br>
+
+`mongod` - is the primary daemon process for the MongoDB system.
+
+<br>
+
+### Data Types
+- Text, String
+- Boolean
+- Number - Integer (int32), NumberLong (int64), NumberDecimal
+- ObjectId
+- ISODate - ISODate("2011-11-11")
+- Timestamp
+- Embedded Documents - `{person: {...}}`
+- Arrays - `{names: [...]}`
+
+<br>
 
