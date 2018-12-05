@@ -117,7 +117,7 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 
 <br>
 
-###  Facts, internal mongo.... whatever...
+###  Facts, internal mongo.... whatever... just random stuff
 
 `"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification).
 ```
