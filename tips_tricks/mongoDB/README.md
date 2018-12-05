@@ -117,7 +117,7 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 
 <br>
 
-###  Facts, internal mongo.... whatever... just random stuff
+###  Facts, internal mongo.... whatever... just random stuff...
 
 `"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification).
 ```
@@ -129,6 +129,10 @@ a 3-byte counter, starting with a random value.
 <br>
 
 `mongod` - is the primary daemon process for the MongoDB system.
+
+<br>
+
+`Hard Limits` - mongo document may have 16mb including embedded documents. Additionaly you can have 100 levels of embedded documents.
 
 <br>
 
