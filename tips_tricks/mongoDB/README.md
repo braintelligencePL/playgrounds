@@ -110,12 +110,14 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 
 # Few informations
 
-## Other interesting things
+### Interesting commands
 
 - `db.COLLECTION.find().forEach( (pass) => {printjson(pass)})` <br>
 📜 find() returns cursor you simply can't display all the data so you have a cursor.
 
 <br>
+
+###  Facts, internal mongo.... whatever...
 
 `"_id" : ObjectId("5bfd1bae09e36be04efd9630")` - document id, unique id, mongo id, [docs](https://docs.mongodb.com/manual/reference/method/ObjectId/#ObjectIDs-BSONObjectIDSpecification).
 ```
