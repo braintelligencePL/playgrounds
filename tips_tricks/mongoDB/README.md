@@ -36,11 +36,16 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
+### Data Types
+- Text, String
+- Boolean
+- Number - Integer (int32), NumberLong (int64), NumberDecimal
+- ObjectId
+- ISODate - ISODate("2011-11-11")
+- Timestamp
+- Embedded Documents - `{person: {...}}`
+- Arrays - `{names: [...]}`
 
-
-## Interesting stuff
-
-<br>
 <br>
 
 # MongoShell Commands: 
