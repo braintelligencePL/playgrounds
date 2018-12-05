@@ -74,6 +74,7 @@ a 3-byte counter, starting with a random value.
 <br>
 
 ### Find - specify fields to return (bandwidth is less busy that way) - PROJECTION
+Projection - you can tell mongoDB which field you want and which you dont.
 - `db.COLLECTION.find({}, {name: 1})` <br>
 📜 first argument: {} find all. <br>
 📜 second argument: Return only name field (plus mongo _id) <br> 
