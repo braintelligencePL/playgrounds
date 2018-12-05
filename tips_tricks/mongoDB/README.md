@@ -132,7 +132,7 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
-`Hard Limits` - mongo document may have 16mb including embedded documents. Additionaly you can have 100 levels of embedded documents.
+`Hard Limit` - mongo document may have 16mb including embedded documents. Additionaly you can have 100 levels of embedded documents.
 
 <br>
 
@@ -140,6 +140,11 @@ a 3-byte counter, starting with a random value.
 - Text, String
 - Boolean
 - Number - Integer (int32), NumberLong (int64), NumberDecimal
+```
+NumberInt creates a int32 value => NumberInt(55)
+NumberLong creates a int64 value => NumberLong(7489729384792)
+If you just use a number (e.g. insertOne({a: 1}), this will get added as a normal double into the database. The reason for this is that the shell is based on JS which only knows float/ double values and doesn't differ between integers and floats.
+```
 - ObjectId
 - ISODate - ISODate("2011-11-11") and Timestamp
 ```
