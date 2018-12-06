@@ -109,6 +109,9 @@ Projection - you can tell mongoDB which field you want and which you dont wanna 
 - `db.COLLECTION.deleteMany({})` <br> 
 📜 Delete all documents
 
+<br> 
+<br> 
+
 # Few informations
 
 ### Interesting commands
