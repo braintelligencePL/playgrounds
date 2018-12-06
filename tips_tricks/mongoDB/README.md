@@ -137,6 +137,18 @@ a 3-byte counter, starting with a random value.
 
 <br>
 
+### Relations - Options
+Lets say you have user, adres, work.
+
+1. We can just create embedded document (nested)
+2. Reference so Customer has list of books. 
+
+#### Relation - One to one - Embedded
+
+
+
+<br>
+
 ### Data Types
 - Text, String
 - Boolean
