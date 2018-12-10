@@ -75,7 +75,6 @@ class ConsumerSection {
         famousPeople.stream()
                 .forEach(element -> {
                     System.out.println(element);
-
                 });
 
         famousPeople.forEach(chainedConsumer);

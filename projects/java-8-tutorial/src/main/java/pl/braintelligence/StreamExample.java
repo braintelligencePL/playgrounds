@@ -165,12 +165,13 @@ class ReductionExample {
 
         var streamOfTools = tools.stream();
 
-        var ss = "2" + 234;
-//        System.out.println(ss);
+        //        System.out.println(ss);
 
         tools.stream()
 //                .peek(System.out::println)
                 .collect(Collectors.joining(", "));
+
+        var wuut = new ArrayList<>();
 
     }
 
