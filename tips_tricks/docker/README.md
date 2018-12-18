@@ -1,4 +1,4 @@
-## Docker
+# docker and docker-compose
 
 ```bash
 # Delete all containers
