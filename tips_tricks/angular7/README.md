@@ -1,2 +1,3 @@
 #### Generate component via AngularCLI: files -> (CSS, HTML, SPEC.TS, TS)
-* `ng generate component name-of-your-component` 
+* full command: `ng generate component component-name` 
+* shortcut command: `ng g c component-name`  
