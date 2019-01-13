@@ -1,7 +1,7 @@
-package pl.braintelligence;
+package pl.braintelligence.garbage;
 
 
-import pl.braintelligence.models.Person;
+import pl.braintelligence.garbage.models.Person;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,6 +16,15 @@ import java.util.function.Predicate;
  * Consumer Section
  */
 class ConsumerSection {
+
+    public static Consumer<Person> adding(List list) {
+        return list::add;
+    }
+
+    public static Consumer<Person> printing() {
+        return System.out::println;
+    }
+
     public static void main(String[] args) {
 
         List<Person> persons = Arrays.asList(
@@ -28,10 +37,11 @@ class ConsumerSection {
         Consumer<Person> adding = result::add;
         Consumer<Person> printing = System.out::println;
 
-        persons.stream()
-                .forEach(adding.andThen(printing));
+        persons.stream().forEach(adding.andThen(printing));
 
-        System.out.println(result + "asd");
+        persons.stream()
+                .forEach(adding(result).andThen(printing()));
+
 
 //        consumer1.accept("consumer1 ");
 //        consumer2.accept("consumer2 ");
