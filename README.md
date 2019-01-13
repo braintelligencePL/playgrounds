@@ -1,6 +1,6 @@
 # Life, the universe and everything else - Playground
 
-You will find here few sample projects that I made to embrace some concepts.
+v2 of my notes, old one [here](https://github.com/braintelligencePL/Notes)
 
 ## **What you can find here:**
 
