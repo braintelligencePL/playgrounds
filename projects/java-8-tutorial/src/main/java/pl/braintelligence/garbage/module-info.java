@@ -302,4 +302,8 @@ class OptionalExample {
         list.stream().of
 
     }
+
+    public static void main(String[] args) {
+
+    }
 }
