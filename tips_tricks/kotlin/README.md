@@ -1,6 +1,6 @@
 ## To remove that from build.gradle:
 
-```
+```kotlin
 compileKotlin {
     kotlinOptions {
         freeCompilerArgs = ['-Xjsr305=strict']
@@ -17,7 +17,7 @@ compileTestKotlin {
 ```
 
 ## Make ApplicationStarter like that: 
-```
+```kotlin
 @SpringBootApplication
 class Application {
 	companion object {
