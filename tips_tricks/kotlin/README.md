@@ -1,4 +1,7 @@
-## To remove that from build.gradle:
+
+## Less code in build.gradle
+
+To remove that from build.gradle:
 
 ```kotlin
 compileKotlin {
@@ -16,7 +19,7 @@ compileTestKotlin {
 }
 ```
 
-## Make ApplicationStarter like that: 
+Make ApplicationStarter like that: 
 ```kotlin
 @SpringBootApplication
 class Application {
