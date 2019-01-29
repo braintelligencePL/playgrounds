@@ -1,5 +1,5 @@
 
-## Less code in build.gradle
+## ☢ Less code in build.gradle
 
 To remove that from build.gradle:
 
