@@ -1,23 +1,15 @@
 package pl.braintelligence.garbage;
 
 
-import groovy.time.TimeDuration;
-import groovy.util.logging.Slf4j;
+import io.vavr.control.Option;
 import pl.braintelligence.garbage.models.Person;
 
-import java.io.Serializable;
-import java.lang.invoke.MethodHandles;
-import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.logging.Logger;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 //public class StreamExample {
@@ -247,7 +239,11 @@ class OptionalExample {
         var immutable = "asdf";
         immutable = "1234";
 
-//        final String immutableAndFinal = "asdfzxcv";
+//        objects.stream()
+//                .map(Person::getAge)
+//                .orElse("zxc");
+//
+        final String immutableAndFinal = "asdfzxcv";
 //        immutableAndFinal = "1234";
 
         Instant start = Instant.now();
@@ -259,7 +255,6 @@ class OptionalExample {
         // Let's say we want to represent a date like 24.01.1765
         var date1 = LocalDate.of(2000, Month.JANUARY, 10);
         var date2 = LocalDate.of(2010, 3, 20);
-
 
         System.out.println(
                 Period.between(
@@ -299,11 +294,118 @@ class OptionalExample {
 
         var list = List.of("123", "asd");
 
-        list.stream().of
-
-    }
-
-    public static void main(String[] args) {
 
     }
 }
+
+class User {
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+}
+
+class Address {
+    private String zipCode;
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        var firstOptional = Optional.ofNullable(null);
+        System.out.println(
+                firstOptional.or(() -> Optional.of("Rick"))
+        );
+        ;
+
+
+        var value = Optional.ofNullable("");
+        value.ifPresentOrElse(
+                e -> System.out.println(e),   // 'value' is printed
+                () -> System.out.print("Not found") // ...
+        );
+//        var secondValue = Optional.ofNullable(null);
+//
+//        var xx = secondValue.or(() -> Optional.of(null))
+//                .orElse(Optional.empty());
+//
+//        System.out.println(xx);
+
+        Stream<Optional<Integer>> stream = Stream.of(Optional.of(1), Optional.of(2), Optional.empty());
+
+        Stream<Integer> ints = stream.flatMap(Optional::stream);
+
+        ints.forEach(System.out::println);
+
+    }
+
+    public static <T> Optional<T> or(Optional<T> a, Optional<T> b) {
+        if (a.isPresent())
+            return a;
+        else
+            return b;
+    }
+}
+
+
+class OptionalOr {
+
+    public static void main(String[] args) {
+        Optional<Customer> defaultCustomer = Optional.of(new Customer("better something than nothing"));
+
+        Optional<Customer> customer =
+                getYourCustomer()
+                        .or(() -> getExternalCustomer())
+                        .or(() -> defaultCustomer);
+
+        System.out.println(customer.get());
+
+        System.out.println(Optional.of(null));
+
+    }
+
+    public static Optional<Customer> getYourCustomer() {
+        return Optional.empty();
+    }
+
+    public static Optional<Customer> getExternalCustomer() {
+        return Optional.of(new Customer("asdfg"));
+    }
+}
+
+class Customer {
+    private String name;
+
+    public Customer(String name) {
+        this.name = name;
+    }
+}
+
+class DUaspdoa {
+    public static void main(String[] args) {
+
+        Comparator<Person> comparatorAge = (o1, o2) -> o2.getAge() - o1.getAge();
+        Comparator<Person> comparatorName = (o1, o2) -> o1.getName().compareTo(o2.getName());
+
+        Function<Person, Integer> functionInteger = person -> person.getAge();
+        Function<Person, String> functionString = person -> person.getName();
+
+        var strings = Arrays.asList("One", "Two", "Three");
+
+        System.out.println(Set.of("two", "two"));
+
+//        strings.add("Four"); // UnsupportedOperationException
+    }
+}
+
+
+
+
+
+
+
+
+

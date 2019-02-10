@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-<p>XX</p>
+  <app-expandable-table></app-expandable-table>
   `,
   styleUrls: ['./app.component.css']
 })
