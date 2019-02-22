@@ -1,14 +1,9 @@
 package pl.braintelligence.garbage;
 
-import org.hibernate.validator.internal.util.privilegedactions.GetMethod;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.util.Optional;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
