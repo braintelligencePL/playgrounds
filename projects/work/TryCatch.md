@@ -1,4 +1,8 @@
+
 Dzisiaj pobawimy się pożyczkowym wzorcem, a mianowicie Loan Pattern. Na jego podstawie zrobimy sobie funkcyjnego TryCatcha. Jest to wzorzec wywodzący się bardziej ze środowiska funkcyjnego tuteż Scalowego. Java ostatnimi czasy również stara się zainstnieć w tym świecie i tak właśnie powstało kilka bibliotek umożliwiających tworzenie bardziej funkcyjnego kodu. Przedstawimy sobie takie biblioteki jak Vavr, oraz JOOλ.
+
+# Wstęp do świata funkcji
+... 
 
 #### Szable w dłoń i robimy funkcyjnie!
 ### Ale zacznijmy od początku... 
