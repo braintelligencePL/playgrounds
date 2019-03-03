@@ -58,16 +58,23 @@ Gdzie w Javie byłoby to `Function<? super T, ? extends R>`.
 
 Jak się zapewne domyślasz powyższy kod to dobrze nam znana metoda ` .map { } `
 
-Jeśli nadal nie dowierzasz jak Kotlin ułatwia kod zobacz na przykład katy, który dla Ciebie przygotowałem:
-
-[Java](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/main/java/pl/braintelligence/katas/Java_1_SocketsPairs.java) oraz [Kotlin](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/main/kotlin/pl/braintelligence/katas/Kotlin_1_SocketsPairs.kt), a tutaj [Test Jednostkowy](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/test/groovy/pl/braintelligence/katas/_1_SocketsPairsTest.groovy).
+Kotlin bardzo upraszcza kod. Tutaj znajdziesz prosty przykład z katą: [Java](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/main/java/pl/braintelligence/katas/Java_1_SocketsPairs.java) oraz [Kotlin](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/main/kotlin/pl/braintelligence/katas/Kotlin_1_SocketsPairs.kt), a tutaj [Test Jednostkowy](https://github.com/braintelligencePL/snippets-and-katas-of-jvm-languages/blob/master/katas/src/test/groovy/pl/braintelligence/katas/_1_SocketsPairsTest.groovy).
 
 Oczywiście jest moja implementacja, także jak znasz lepszy sposób na zrobienie tego [zadanka](https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup) nie krępuj się zrobić PR. 
 
 <br>
 
-#### Jeszce więcej mięsa
+
+#### Nie język czyni programowanie funkcyjnym, a podejście 🖐 [WIP]
+Często haskell jest praktycznym przykładem czysto funkcjonalnego języka. Niemniej to nie język czyni programowanie funkcyjnym. Takowy język daje nam tyle, że jest bardziej przyjazny dla tego podejścia. Funkcyjnie można pisać w większości języków.
+
+// todo: anonymous functions, closures, lazy-evaluation 
+
+Rzeczy te pojawiją się często w językach funkcjonalnych i są praktycznie spowiwem tworzącym język funkcjonalym. 
+
+
 ### Przechodząc z imperatywnego do funkcyjnego świata
+
 
 Przykłady zerżnięte od [pysaumont](https://github.com/pysaumont)
 
@@ -84,17 +91,8 @@ Mamy tutaj żywy przykład efektu ubocznego o jakim mówiliśmy wcześniej. Na p
 
 // todo: W Javie można skorzystać z Tuple(T, R) od Vavr
 
-// todo: return Purchase(donut, payment)
+// todo: W Kotlinie `Purchase(donut, payment)` lub `Pair(T, R)`
  
-
-
-## Nie język czyni programowanie funkcyjnym, a podejście 🖐 [WIP]
-Często haskell jest praktycznym przykładem czysto funkcjonalnego języka. Niemniej to nie język czyni programowanie funkcyjnym. Takowy język daje nam tyle, że jest bardziej przyjazny dla tego podejścia. Funkcyjnie można pisać w większości języków.
-
-// todo: anonymous functions, closures, lazy-evaluation 
-
-Rzeczy te pojawiją się często w językach funkcjonalnych i są praktycznie spowiwem tworzącym język funkcjonalym. 
-
 
 #### Na początek zacznijmy od starego i wciąż dobrego (co warto podkreślić) TryCatcha:
 todo:  
