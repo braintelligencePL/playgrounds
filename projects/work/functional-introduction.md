@@ -36,8 +36,10 @@ Dla obrazowania przykładu zróbmy sobie funkcję w Kotlinie o wdzięcznej nazwi
 ⚙ Anonymous classes - `() -> "czyli lambdy"`
 
 ### Skutki uboczne programowania imperatywnego 🔰
-Impratywnego, czyli takiego z jakim mamy styczność zazwyczaj na początku drogi z programowaniem. 
+Impratywnego, czyli takiego z jakim mamy styczność zazwyczaj na początku drogi z programowaniem.
+
 Przykładowo jeśli A == 0 to zwróć B inaczej B++ oraz A--. 
+
 Mamy tutaj mutowalne zmienne, czyli w sumie niszczymy stany obiektów. Jeśli okaże się, że trzeba zmienić wymagania biznesowe to szybko okazuje się, że również zmieniamy wynik działania naszej aplikacji. Programowanie funkcyjne promuje nie-mutowalność obiektów, A.K.A. Immutability. Co jest dobre. Do tego poprzez funkcje ograniczamy interakcje naszego kodu ze światem zewnętrznym. Integracja jest dopiero po skończeniu obliczeń, potem rzucamy wyjątki, zapisujemy do bazy, czy wysyłamy coś po HTTPie. 
 
 ### Wracając do wejścia/wyjścia 🚪
