@@ -49,7 +49,7 @@ Funkcjny kod ma zapewnić jak najmniejszą ilość efektów ubocznych, czyli mam
 //todo: 
 
 
-## Czas trochę mięsa 🍗
+## Czas na trochę mięsa 🍗
 Kod będzie w Kotlinie. Myślę, że o wiele lepiej oddaje różne idea programowania funkcyjnego bez zbędnego boilercode'u.
 
 Choćby zapis typu funkcji wygląda następująco `(A) -> B`.
