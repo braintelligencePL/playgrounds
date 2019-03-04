@@ -76,7 +76,7 @@ Rzeczy te pojawiją się często w językach funkcjonalnych i są praktycznie sp
 ### Przechodząc z imperatywnego do funkcyjnego świata
 
 
-Przykłady zerżnięte od [pysaumont](https://github.com/pysaumont)
+Przykład zerżnięty od [pysaumont](https://github.com/pysaumont)
 
 ```kotlin
 fun buy(creditCard: CreditCard): Donut {
