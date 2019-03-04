@@ -88,10 +88,11 @@ fun buy(creditCard: CreditCard): Donut {
 
 Mamy tutaj żywy przykład efektu ubocznego o jakim mówiliśmy wcześniej. Na pierwszy rzut oka ten kawałek kodu nie wygląda podejrzanie zwykły blokujący się kod, ale potwór kryje się w implementacji. Obciążenie karty zapewne ma jakiś rodzaj uwierzytelniania, po czym pobierany jest stan rachunku, a na końcu rejestrowana jest transakcja. A na końcu mamy pączka, bo kto nie lubi pączków. :)   
 
+// todo: Taki kod jest bardzo trudno przetestować..
 
 // todo: W Javie można skorzystać z Tuple(T, R) od Vavr
 
-// todo: W Kotlinie `Purchase(donut, payment)` lub `Pair(T, R)`
+// todo: W Kotlinie `Purchase(donut, payment)` , `Pair(T, R)`
  
 
 #### Na początek zacznijmy od starego i wciąż dobrego (co warto podkreślić) TryCatcha:
