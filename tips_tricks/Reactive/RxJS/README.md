@@ -1,6 +1,8 @@
-Czy wiesz, że reduce z rx.js da Ci możliwość zredukowania strumienia do jednego obiektu docelowego?
+Redukcja strumienia do jednego objektu docelowego.
 
-Scan w trakcie redukowania wyemituje wartości pośrednie!
+Scan podczas redukcji emituje wartości pośrednie
+
+```javascript
 import { of } from 'rxjs';
 import { scan, reduce } from 'rxjs/operators';
  
@@ -17,3 +19,4 @@ const scanSubscribe = scanSource.subscribe(s => console.log('Scan Sum:', s));
 // Scan Sum: 3
 // Scan Sum: 6
 // Scan Sum: 10
+```
