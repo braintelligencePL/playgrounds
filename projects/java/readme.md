@@ -1,3 +1,7 @@
+
+
+[Java Strings are Immutable - Here's What That Actually Means](https://www.youtube.com/watch?v=Bj9Mx_Lx3q4&ab_channel=CodingwithJohn)
+
 ```java
 public static void main(String[] args) {
         String first = "John"; 
